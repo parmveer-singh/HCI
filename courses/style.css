@@ -2,27 +2,26 @@
     padding: 0;
     margin: 0;
     font-family: "Poppins", serif;
-}
+  }
   
-body {
+  body {
     color: white;
     background: black;
-}
+  }
   
-.header {
+  .header {
     font-size: 12px;
     padding-top: 36px;
     padding-bottom: 10px;
     text-align: left;
     padding-left: 120px;
-}
+  }
   
-.sidebar {
+  .sidebar {
     z-index: 1;
     display: inline-block; 
     min-height: 200px;
     width: 60px;
-    background-color: black;
     position: fixed;
     left: 0;
     top: 50%;
@@ -30,148 +29,148 @@ body {
     margin-left: 1%;
       
     ul {
-        text-align: center;
-        color: white;
-        list-style-type: none;
+      text-align: center;
+      list-style-type: none;
+  
+      li {
+        padding: 20px 0;
+        margin: 20px 0;
+        cursor: pointer;
+        transition: all ease-out 120ms;
         
-        li {
-            padding: 20px 0;
-            margin: 20px 0;
-            cursor: pointer;
-            transition: all ease-out 120ms;
   
-            a {
-                list-style: none;
-                list-style-type: none ;
-                text-decoration: none;
-            }
-    
-            i {
-                display: block;
-                font-size: 24px;
-                transition: all ease 450ms;
-                color: #26222e;
-            }
-    
-            .tooltip {
-                display: inline-block;
-                position: absolute;
-                background-color:#26222e;
-                padding: 8px 15px;
-                border-radius: 3px;
-                margin-top: -26px;
-                left: 70px;
-                opacity: 0;
-                visibility: hidden;
-                font-size: 13px;
-                color: #8D7EFF;
-                letter-spacing: 0.5px;
-    
-                &:before {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    left: -4px;
-                    top: 10px;
-                    transform: rotate(45deg);
-                    width: 10px;
-                    height: 10px;
-                    background-color: inherit;
-                }
-            }
-    
-            &:hover {
-                background-color:#8D7EFF;
-                border-radius: 20px;
-                    
-                .tooltip {
-                    visibility: visible;
-                    opacity: 1;
-                }
-            }
-                
-            &.active {
-                background-color: #26222e;
-                border-radius: 20px;
-                    
-                i {
-                    color: #8D7EFF;
-                }
-            }
+        a {
+          list-style: none;
+          list-style-type: none ;
+          text-decoration: none;
         }
-    }
-}
   
-.filter {
+        i {
+          display: block;
+          font-size: 24px;
+          transition: all ease 450ms;
+          color: #26222e;
+        }
+  
+        .tooltip {
+          display: inline-block;
+          position: absolute;
+          background-color:#26222e;
+          padding: 8px 15px;
+          border-radius: 3px;
+          margin-top: -26px;
+          left: 70px;
+          opacity: 0;
+          visibility: hidden;
+          font-size: 13px;
+          color: #8D7EFF;
+          letter-spacing: 0.5px;
+  
+          &:before {
+                      content: '';
+                      display: block;
+                      position: absolute;
+                      left: -4px;
+                  top: 10px;
+                      transform: rotate(45deg);
+                  width: 10px;
+                      height: 10px;
+                  background-color: inherit;
+                  }
+        }
+  
+        &:hover {
+                  background-color:#8D7EFF;
+          border-radius: 20px;
+                  
+          .tooltip {
+                      visibility: visible;
+                      opacity: 1;
+                }
+          }
+            
+        &.active {
+                  background-color: #26222e;
+          border-radius: 20px;
+                  
+                  i {
+                      color: #8D7EFF;
+                  }
+              }
+      }
+    }
+  }
+  
+  .filter {
     margin-left: 120px;
     margin-top: 1.5rem;
     text-align: left;
   
     ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
     }
   
     li {
-        list-style-type: none;
-        color: white;
-        display: inline;
-        margin-right: 50px;
+      list-style-type: none;
+      color: white;
+      display: inline;
+      margin-right: 50px;
     }
   
     a {
-        color: white;
-        list-style-type: none;
-        text-decoration: none;
-        transition: all ease-out 120ms;
+      color: white;
+      list-style-type: none;
+      text-decoration: none;
+      transition: all ease-out 120ms;
     }
   
-    a:hover {
-        color: #8D7EFF;
-        font-weight: 500;
-        text-decoration: underline;
+    a:hover, a:active {
+      color: #8D7EFF;
+      font-weight: 500;
+      text-decoration: underline;
     }
   
     .filter-link.active { 
-        color: #8D7EFF;
-        font-weight: 500;
-        text-decoration: underline;
+      color: #8D7EFF;
+      font-weight: 500;
+      text-decoration: underline;
     }
-}
+  }
   
-.courses-container {
+  .courses-container {
     width: 96%;
-}
+  }
   
-.courses-box {
+  .courses-box {
     margin-left: 120px;
     display: flex;
     flex-direction: column;
     padding: 20px 0;
-}
+  }
   
-.courses-item {
+  .courses-item {
     flex-basis: 100%;
     margin: 0 0 20px;
     overflow: hidden;
     border-radius: 28px;
-}
+  }
   
-.courses-item-link {
+  .courses-item-link {
     text-decoration: none;
     display: block;
     padding: 30px 30px;
     background-color: #121212;
     overflow: hidden;
     position: relative;
-}
+  }
   
-.courses-item-link:hover .courses-item-bg {
+  .courses-item-link:hover .courses-item-bg {
     transform: scale(10);
-}
+  }
   
-.courses-item-title {
+  .courses-item-title {
     min-height: 87px;
     overflow: hidden;
     font-weight: bold;
@@ -179,35 +178,28 @@ body {
     color: #FFF;
     z-index: 2;
     position: relative;
-}
+  }
   
-.courses-item-date-box {
-    font-size: 18px;
-    color: #FFF;
-    z-index: 2;
-    position: relative;
-}
-  
-.courses-item-info { 
+  .courses-item-info { 
     display: flex; 
     justify-content: space-between; 
     width: 96%; 
-} 
+  } 
   
-.left-side { 
+  .left-side { 
     z-index: 2;
     flex: 1; 
     color: white;
-} 
+  } 
   
-.right-side { 
+  .right-side { 
     z-index: 2;
     flex: 1; 
     color: white;
     text-align: right; 
-}
+  }
   
-.courses-item-bg {
+  .courses-item-bg {
     height: 150px;
     width: 150px;
     background-color: #f9b234;
@@ -217,29 +209,43 @@ body {
     right: -75px;
     border-radius: 50%;
     transition: all 1s ease;
-}
+  }
   
-.courses-item[data-status="active"] .courses-item-bg {
-    background-color: #8D7EFF;
-}
+  .courses-item[data-status="active"] .courses-item-bg {
+    background-color: rgb(141, 126, 255);
+  }
   
-.courses-item[data-status="completed"] .courses-item-bg {
+  .courses-item[data-status="completed"] .courses-item-bg {
     background-color: gray;
-}
+  }
   
-@media only screen and (max-width: 979px) {
+  @media only screen and (max-width: 979px) {
     .courses-item-title {
       font-size: 24px;
     }
-}
   
-@media only screen and (max-width: 767px) {
+    .container .course-table td, th {
+      font-size: 0.8rem;
+      .status-label{
+        font-size: 0.8rem;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
     .courses-container {
       width: 96%;
     }
-}
   
-@media only screen and (max-width: 639px) {
+    .container .course-table td, th {
+      font-size: 0.8rem;
+      .status-label{
+        font-size: 0.8rem;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 639px) {
     .courses-item-title {
       min-height: 72px;
       line-height: 1;
@@ -251,4 +257,103 @@ body {
     .courses-item-date-box {
       font-size: 16px;
     }
-}
+  
+    .container .course-table td, th {
+      font-size: 0.8rem;
+      .status-label{
+        font-size: 0.8rem;
+      }
+      
+    }
+  }
+  
+  .container {  
+    margin-top: 20px;
+    margin-left: 120px;
+    margin-right: 20px;
+    width: calc(100% - 140px);
+    font-size: 1rem;
+    overflow-x: auto;
+    box-sizing: border-box;
+    
+    .course-table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: black;
+  
+      th {
+        font-weight: 400;
+        padding: 7px; 
+        text-align: center; 
+        color: rgb(255, 255, 255, 0.2);
+      } 
+  
+      td { 
+        border: 1px solid rgba(221, 221, 221, 0.2); 
+        border-left: none;
+        border-right: none;
+        padding: 7px; 
+        text-align: center; 
+        vertical-align: middle;
+  
+        .status-indicator {
+          display: inline-flex;
+          align-items: center;
+          gap: 5px;
+          padding: 2px 8px;
+          border-radius: 20px;
+          font-size: 14px;
+          width: fit-content;
+          margin: auto;
+        }
+  
+        a {
+          list-style: none;
+          list-style-type: none;
+          color: white;
+          text-decoration: none;
+        }
+  
+        .status-circle {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+        }
+  
+        .status-todo {
+          color: white;
+          background-color: #28446B;
+        }
+        
+        .status-todo .status-circle {
+          background-color: #4454CC;
+        }
+        
+        .status-missed {
+          color: white;
+          background-color:#6D352F;
+        }
+        
+        .status-missed .status-circle {
+          background-color: #CC4844;
+        }
+        
+        .status-completed {
+          color: white;
+          background-color:#2A583F;
+        }
+        
+        .status-completed .status-circle {
+          background-color: #66b046;
+        }
+  
+        .status-passed {
+          color: #66b046;
+        }
+        
+        .status-failed {
+          color: #b04646;
+        }
+      } 
+    }
+  }

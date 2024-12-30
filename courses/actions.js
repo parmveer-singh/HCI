@@ -28,3 +28,28 @@ document.querySelectorAll('.filter-link').forEach(link => {
     this.classList.add('active'); 
     }); 
 });
+
+  const submitButton = document.getElementById('submit-button');
+  const fileInput = document.getElementById('file-input');
+  const fileLinksDiv = document.getElementById('file-links');
+
+  submitButton.addEventListener('click', function () {
+    fileInput.click();
+  });
+
+  fileInput.addEventListener('change', function () {
+    const files = Array.from(fileInput.files);
+    if (files.length > 0) {
+      fileLinksDiv.innerHTML = '';
+      files.forEach(file => {
+        const fileURL = URL.createObjectURL(file);
+        const fileLink = document.createElement('a');
+        fileLink.href = fileURL;
+        fileLink.textContent = file.name;
+        fileLink.target = '_blank';
+        fileLink.style.display = 'block';
+        fileLinksDiv.appendChild(fileLink);
+      });
+      submitButton.style.display = 'none';
+    }
+  });
