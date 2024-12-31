@@ -41,7 +41,7 @@ function styleButton(button) {
     };
 
     // Apply styles to the button
-    button.style.backgroundColor = "#4CAF50";
+    button.style.backgroundColor = "#8d7eff";
     button.style.color = "white";
     button.style.padding = "10px 20px";
     button.style.border = "none";
@@ -69,8 +69,8 @@ function handleButtonClick(clickedButton) {
     // Loop through all buttons
     allButtons.forEach(button => {
         if (button === clickedButton) {
-            // Keep the clicked button green
-            button.style.backgroundColor = "#4CAF50";
+            // Keep the clicked button pink
+            button.style.backgroundColor = "#8d7eff";
         } else {
             // Turn all other buttons grey
             button.style.backgroundColor = "grey";

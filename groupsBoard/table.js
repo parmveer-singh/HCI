@@ -17,9 +17,6 @@ function disableJoinButtons(exceptButton) {
       // Disable the other buttons and turn them grey
       button.disabled = true; // Disable the other buttons
       button.style.backgroundColor = "grey"; // Change the color of disabled buttons to grey
-    } else {
-      // Keep the clicked button's background color green
-      button.style.backgroundColor = "green"; // Change the clicked button's color to green
     }
   });
 }
@@ -31,7 +28,7 @@ function enableJoinButtons() {
   // Loop through each button
   buttons.forEach(button => {
     button.disabled = false; // Enable the button
-    button.style.backgroundColor = "#4CAF50"; // Reset the button's background color to green
+    button.style.backgroundColor = "#8d7eff"; // Reset the button's background color to green
     button.style.cursor = "pointer"; // Ensure the cursor is set to pointer
   });
 }
@@ -79,7 +76,7 @@ function createTable() {
   joinButton1.classList.add("join-button"); // Add class to the button
   joinButton1.innerText = "Join";
   joinButton1.onclick = function () {
-    joinButton1.style.backgroundColor = "green"; // Change the color to green
+    joinButton1.style.backgroundColor = "#8d7eff"; // Change the color to green
     disableJoinButtons(joinButton1);
     td2.innerText = "4 out of 4"; // Update members count
     exit(row1, "Group A", joinButton1);
@@ -104,7 +101,7 @@ function createTable() {
   joinButton2.classList.add("join-button"); // Add class to the button
   joinButton2.innerText = "Join";
   joinButton2.onclick = function () {
-    joinButton2.style.backgroundColor = "green"; // Change the color to green
+    joinButton2.style.backgroundColor = "#8d7eff"; // Change the color to green
     disableJoinButtons(joinButton2);
     td5.innerText = "4 out of 4"; // Update members count
     exit(row2, "Group B", joinButton2);
@@ -124,18 +121,12 @@ function exit(row, groupName, button) {
   // Create an exit icon (can be a button or an image)
   const exitButton = document.createElement("button");
   exitButton.innerText = "Exit"; // Or use an icon here (e.g., "X" or an image)
-  exitButton.style.backgroundColor = "red"; // Red color for exit
-  exitButton.style.color = "white";
-  exitButton.style.padding = "5px 10px";
-  exitButton.style.border = "none";
-  exitButton.style.borderRadius = "5px";
-  exitButton.style.fontSize = "14px";
-  exitButton.style.cursor = "pointer";
+  exitButton.classList.add("exit-button"); // Add the CSS class
 
   // When clicked, it will remove the exit button, re-enable the join button, and turn the color back to normal
   exitButton.onclick = function () {
     button.disabled = false; // Re-enable the Join button
-    button.style.backgroundColor = "#4CAF50"; // Change back to green
+    button.style.backgroundColor = "#8d7eff"; // Change back to green
     const membersCell = row.querySelector("td:nth-child(2)");
     membersCell.innerText = "3 out of 4"; // Reset the member count
     exitButton.remove(); // Remove the exit button

@@ -29,7 +29,7 @@
 }
 
 .join-button {
-    background-color: #4CAF50; /* Green background by default */
+    background-color: #8d7eff; /* Green background by default */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -40,7 +40,7 @@
   }
   
   .join-button:hover {
-    background-color: #45a049; /* Slightly darker green on hover */
+    background-color: #8d7eff; /* Slightly darker green on hover */
     transform: scale(1.05);
   }
   
@@ -52,3 +52,29 @@
     background-color: grey; /* Grey background when disabled */
     cursor: not-allowed;
   }
+
+/* Exit button styles */
+.exit-button {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Optionally add a hover effect */
+.exit-button:hover {
+  background-color: darkred;
+}
+
+/* Join button styles (optional, if needed for a specific button) */
+.join-button {
+  background-color: #8d7eff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
