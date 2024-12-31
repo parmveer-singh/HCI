@@ -1,26 +1,32 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const filterLinks = document.querySelectorAll(".filter-link");
-    const courses = document.querySelectorAll(".courses-item");
+  const filterLinks = document.querySelectorAll(".filter-link");
+  const courses = document.querySelectorAll(".courses-item");
 
-    filterLinks.forEach(link => {
-        link.addEventListener("click", function (e) {
-            e.preventDefault();
-            
-            const filter = this.getAttribute("data-filter");
+  filterLinks.forEach(link => {
+      link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const filter = this.getAttribute("data-filter");
 
-            courses.forEach(course => {
-                if (filter === "all") {
-                    course.style.display = "block";
-                } else {
-                    const status = course.getAttribute("data-status");
-                    course.style.display = (status === filter) ? "block" : "none";
-                }
-            });
-            filterLinks.forEach(link => link.classList.remove("active-filter"));
-            this.classList.add("active-filter");
-        });
-    });
+          courses.forEach(course => {
+              course.classList.remove("fade-in", "fade-out");
+
+              if (filter === "all" || course.getAttribute("data-status") === filter) {
+                  course.classList.add("fade-in");
+                  course.style.display = "block";
+              } else {
+                  course.classList.add("fade-out");
+                  setTimeout(() => {
+                      course.style.display = "none";
+                  }, 500);
+              }
+          });
+
+          filterLinks.forEach(link => link.classList.remove("active-filter"));
+          this.classList.add("active-filter");
+      });
+  });
 });
+
 
 document.querySelectorAll('.filter-link').forEach(link => { 
     link.addEventListener('click', function() { 
