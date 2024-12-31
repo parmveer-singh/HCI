@@ -1,0 +1,54 @@
+/* Add styling for join buttons */
+/* Target the button using its id */
+#courseButton {
+  background-color:  blue;  /* Green background color */
+  color: white;               /* White text color */
+  padding: 10px 20px;         /* Add some padding */
+  border: none;               /* Remove border */
+  border-radius: 5px;         /* Round the corners */
+  font-size: 16px;            /* Set font size */
+  cursor: pointer;           /* Change cursor to pointer when hovering */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+/* Add hover effect */
+#courseButton:hover {
+  background-color: blue;  /* Slightly darker green on hover */
+  transform: scale(1.05);      /* Slight zoom effect on hover */
+}
+
+/* Focus style (when the button is clicked or focused) */
+#courseButton:focus {
+  outline: none;              /* Remove outline */
+}
+
+/* Disabled button style */
+#courseButton:disabled {
+  background-color: grey;     /* Grey background when disabled */
+  cursor: not-allowed;        /* Show 'not-allowed' cursor */
+}
+
+.join-button {
+    background-color: #4CAF50; /* Green background by default */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .join-button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    transform: scale(1.05);
+  }
+  
+  .join-button:focus {
+    outline: none; /* Remove focus outline */
+  }
+  
+  .join-button:disabled {
+    background-color: grey; /* Grey background when disabled */
+    cursor: not-allowed;
+  }

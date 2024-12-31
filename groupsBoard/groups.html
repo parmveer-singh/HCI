@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modularized Code</title>
+    <link rel="stylesheet" href="buttons.css" />
+  </head>
+  <body>
+    <button id="courseButton">Course!</button>
+    <script type="module">
+      import { replaceButton } from "./buttons.js";
+
+      // Call replaceButton to start the process
+      document
+        .getElementById("courseButton")
+        .addEventListener("click", replaceButton);
+    </script>
+  </body>
+</html>
