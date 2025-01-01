@@ -42,8 +42,6 @@ body {
     align-items: center;
     gap: 20px;
     padding: 20px;
-    background-color: #1e1e1e; /* Dark background */
-    border: 1px solid #444;    /* Dark border for the container */
     border-radius: 10px;
   }
   
