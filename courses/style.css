@@ -318,13 +318,11 @@ body {
     .course-table {
       width: 100%;
       border-collapse: collapse;
-      background-color: black;
   
       th {
         font-weight: 600;
         padding: 7px; 
         text-align: center; 
-        color: rgb(255, 255, 255);
       } 
   
       td { 
@@ -335,6 +333,7 @@ body {
         text-align: center; 
         vertical-align: middle;
   
+        /*status row*/
         .status-indicator {
           display: inline-flex;
           align-items: center;
@@ -345,64 +344,59 @@ body {
           width: fit-content;
           margin: auto;
         }
-  
-        a {
-          list-style: none;
-          list-style-type: none;
-          color: white;
-          text-decoration: none;
-        }
-
-        a:hover {
-          color: #8D7EFF;
-          font-weight: 500;
-          text-decoration: underline;
-        }
-  
-        i {
-          display: block;
-          font-size: 24px;
-          transition: all ease 450ms;
-          color: white;
-        }
-
-        i:hover {
-          color: #8D7EFF;
-          font-weight: 500;
-          text-decoration: underline;
-        }
 
         .status-circle {
           width: 8px;
           height: 8px;
           border-radius: 50%;
         }
-  
+
         .status-todo {
           color: white;
           background-color: rgb(40, 68, 107, 0.4);
-        }
-        
-        .status-todo .status-circle {
-          background-color: #4454CC;
-        }
+
+          .status-circle {
+            background-color: #4454CC;
+          }
+        }        
         
         .status-missed {
           color: white;
           background-color: rgb(109, 53, 47, 0.4);
-        }
-        
-        .status-missed .status-circle {
-          background-color: #CC4844;
+          .status-circle {
+            background-color: #CC4844;
+          }
         }
         
         .status-completed {
           color: white;
           background-color:rgb(42, 88, 63, 0.4);
+          .status-circle {
+            background-color: #66b046;
+          }
+        }
+
+        .status-in-progress {
+          color: #007bff;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          gap: 5px;
         }
         
-        .status-completed .status-circle {
-          background-color: #66b046;
+        a {
+          display: inline-flex;
+          list-style: none;
+          list-style-type: none;
+          color: white;
+          text-decoration: none;
+        }
+
+        i {
+          display: block;
+          font-size: 24px;
+          transition: color 0.3s ease;
+          color: white;
         }
   
         .status-passed {
