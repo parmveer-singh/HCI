@@ -1,79 +1,32 @@
-/* Add styling for join buttons */
-/* Target the button using its id */
+/* Button styling */
 #entryButton {
-  background-color:  blue;  /* Green background color */
-  color: white;               /* White text color */
-  padding: 10px 20px;         /* Add some padding */
-  border: none;               /* Remove border */
-  border-radius: 5px;         /* Round the corners */
-  font-size: 16px;            /* Set font size */
-  cursor: pointer;           /* Change cursor to pointer when hovering */
-  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
-}
-
-/* Add hover effect */
-#entryButton:hover {
-  background-color: blue;  /* Slightly darker green on hover */
-  transform: scale(1.05);      /* Slight zoom effect on hover */
-}
-
-/* Focus style (when the button is clicked or focused) */
-#entryButton:focus {
-  outline: none;              /* Remove outline */
-}
-
-/* Disabled button style */
-#entryButton:disabled {
-  background-color: grey;     /* Grey background when disabled */
-  cursor: not-allowed;        /* Show 'not-allowed' cursor */
-}
-
-
-.join-button {
-    background-color: #8d7eff; /* Green background by default */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  
-  .join-button:hover {
-    background-color: #8d7eff; /* Slightly darker green on hover */
-    transform: scale(1.05);
-  }
-  
-  .join-button:focus {
-    outline: none; /* Remove focus outline */
-  }
-  
-  .join-button:disabled {
-    background-color: grey; /* Grey background when disabled */
-    cursor: not-allowed;
-  }
-
-  
-/* Exit button styles */
-.exit-button {
-  background-color: red;
+  background-color: blue;  /* Blue background */
   color: white;
-  padding: 5px 10px;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Optionally add a hover effect */
-.exit-button:hover {
-  background-color: darkred;
+#entryButton:hover {
+  background-color: darkblue;  /* Slightly darker blue on hover */
+  transform: scale(1.05);
 }
 
+#entryButton:focus {
+  outline: none;
+}
 
-.course-button{
-  background-color: #8d7eff;
+#entryButton:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+/* Course button styling */
+.course-button {
+  background-color: #8d7eff; /* Pink background */
   color: white;
   padding: 10px 20px;
   border: none;
@@ -84,39 +37,61 @@
   transition: background-color 0.3s, transform 0.3s;
 }
 
-/* button hover effect */
-.course-button-style:hover {
-  transform: scale(1.05); /* Scale up slightly on hover */
+.course-button:hover {
+  background-color: #7a6ce8; /* Slightly darker pink on hover */
+  transform: scale(1.05);
 }
 
-/* General button active effect (optional for click feedback) */
-.course-button-style:active {
-  transform: scale(0.95); /* Scale down slightly on click */
+.course-button:active {
+  transform: scale(0.95); /* Slight shrink when clicked */
 }
 
-/* Flex container styling */
-.button-container {
-  display: flex; /* Enables flexbox */
-  flex-direction: row; /* Arrange items in a row */
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
-  gap: 20px; /* Space between buttons */
-  padding: 20px; /* Optional padding for the container */
-  background-color: #f9f9f9; /* Optional background for container */
-  border: 1px solid #ddd; /* Optional border for container */
-  border-radius: 10px; /* Optional rounded corners */
+/* Join button styling */
+.join-button {
+  background-color: #8d7eff; /* Keep the pink color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Optional: Styling for the table */
-table {
-  border-collapse: collapse; /* Optional, for a cleaner table border */
-  width: 80%; /* Optional, control table width */
-  margin: 50px auto; /* Center the table horizontally with top/bottom margins */
+.join-button:hover {
+  background-color: #7a6ce8; /* Darker pink on hover */
+  transform: scale(1.05);
 }
 
-/* Table styling */
-th, td {
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #ddd;
+.join-button:focus {
+  outline: none;
+}
+
+.join-button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+/* Exit button styling */
+.exit-button {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.exit-button:hover {
+  background-color: darkred;
+}
+
+/* Group container styling */
+.group-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
