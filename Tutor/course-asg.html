@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Submit - Tutor</title>
+    
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Boxicons link -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Font link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        Mission Submit <span class="divider">/</span> Courses <span class="divider">/</span> Java
+    </header>  
+
+    <!-- Navigation Bar -->
+    <nav class="sidebar">
+        <ul>
+            <li>
+                <a href="#home">
+                    <i class="bx bx-home-alt"></i>
+                    <span class="tooltip">home</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#course">
+                    <i class="bx bx-book-bookmark"></i>
+                    <span class="tooltip">courses</span>
+                </a>
+            </li>
+            <li>
+                <a href="#assignments">
+                    <i class="bx bx-task"></i>
+                    <span class="tooltip">assignments</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Assignments Table for Tutors -->
+    <div class="container">
+        <table class="course-table">
+            <thead>
+                <tr>
+                    <th>From</th>
+                    <th>Course</th>
+                    <th>Status</th>
+                    <th>Student Submission</th>
+                    <th>Feedback</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">John Doe</a></td>
+                    <td>Java</td>
+                    <td>    
+                        <div class="status-indicator status-completed">
+                            <span class="status-circle"></span>
+                            <span class="status-label">Submitted</span>
+                        </div>
+                    </td>
+                    <td><a href="#"><i class="bx bxs-file-pdf"></i> View Submission</a></td>
+                    <td><a href="a1_feedback.pdf">John Doe_feedback.pdf</a></td>
+                    <td>90%</td>
+                </tr>
+                <tr>
+                    <td><a href="#">Alice Johnson</a></td>
+                    <td>Java</td>
+                    <td>
+                        <div class="status-indicator status-missed">
+                            <span class="status-circle"></span>
+                            <span class="status-label">Missed</span>
+                        </div>
+                    </td>
+                    <td><i class="bx bx-x"></i></td>
+                    <td>
+                        <button class="submit-btn" onclick="openFileExplorer('fileInputA2')">Submit</button>
+                        <input type="file" id="fileInputA2" class="file-input" style="display:none;" onchange="handleFileSelect(event)">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Charlie Brown</a></td>
+                    <td>Java</td>
+                    <td>    
+                        <div class="status-indicator status-completed">
+                            <span class="status-circle"></span>
+                            <span class="status-label">Submitted</span>
+                        </div>
+                    </td>
+                    <td><a href="#"><i class="bx bxs-file-pdf"></i> View Submission</a></td>
+                    <td><a href="a3_feedback.pdf">Charlie Brown_feedback.pdf</a></td>
+                    <td>84%</td>
+                </tr>
+                <tr>
+                    <td><a href="#">Daisy Green</a></td>
+                    <td>Java</td>
+                    <td>    
+                        <div class="status-indicator status-completed">
+                            <span class="status-circle"></span>
+                            <span class="status-label">Submitted</span>
+                        </div>
+                    </td>
+                    <td><a href="#"><i class="bx bxs-file-pdf"></i> View Submission</a></td>
+                    <td><a href="a4_feedback.pdf">Daisy Green_feedback.pdf</a></td>
+                    <td>91%</td>
+                </tr>
+                <tr>
+                    <td><a href="#">Evan White</a></td>
+                    <td>Java</td>
+                    <td>    
+                        <div class="status-indicator status-completed">
+                            <span class="status-circle"></span>
+                            <span class="status-label">Submitted</span>
+                        </div>
+                    </td>
+                    <td><a href="#"><i class="bx bxs-file-pdf"></i> View Submission</a></td>
+                    <td><a href="a5_feedback.pdf">Evan White_feedback.pdf</a></td>
+                    <td>98%</td>
+                </tr>
+                <tr>
+                    <td><a href="#">Grace Blue</a></td>
+                    <td>Java</td>
+                    <td>    
+                        <div class="status-indicator status-todo">
+                            <span class="status-circle"></span>
+                            <span class="status-label">Pending</span>
+                        </div>
+                    </td>
+                    <td><i class="bx bx-x"></i></td>
+                    <td>
+                        <button class="submit-btn" onclick="openFileExplorer('fileInputA6')">Submit</button>
+                        <input type="file" id="fileInputA6" class="file-input" style="display:none;" onchange="handleFileSelect(event)">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Hannah Pink</a></td>
+                    <td>Java</td>
+                    <td>    
+                        <div class="status-indicator status-todo">
+                            <span class="status-circle"></span>
+                            <span class="status-label">Pending</span>
+                        </div>
+                    </td>
+                    <td><i class="bx bx-x"></i></td>
+                    <td>
+                        <button class="submit-btn" onclick="openFileExplorer('fileInputA7')">Submit</button>
+                        <input type="file" id="fileInputA7" class="file-input" style="display:none;" onchange="handleFileSelect(event)">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Jane Smith</a></td>
+                    <td>Java</td>
+                    <td>
+                        <div class="status-indicator status-todo">
+                            <span class="status-circle"></span>
+                            <span class="status-label">Pending</span>
+                        </div>
+                    </td>
+                    <td><i class="bx bx-x"></i></td>
+                    <td>
+                        <button class="submit-btn" onclick="openFileExplorer('fileInputA8')">Submit</button>
+                        <input type="file" id="fileInputA8" class="file-input" style="display:none;" onchange="handleFileSelect(event)">
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function openFileExplorer(inputId) {
+            document.getElementById(inputId).click();
+        }
+
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (file) {
+                alert(`File selected: ${file.name}`);
+            }
+        }
+    </script>
+
+</body>
+</html>
