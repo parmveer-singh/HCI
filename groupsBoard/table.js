@@ -117,7 +117,7 @@ function exit(row, groupName, button) {
   exitButton.classList.add("exit-button"); // Add the CSS class
 
   // When clicked, it will remove the exit button, re-enable the join button, and turn the color back to normal
-  exitButton.onclick = function () {
+  exitButton.onclick = function () { //
     button.disabled = false; // Re-enable the Join button
     button.style.backgroundColor = "#8d7eff"; // Change back to green
     const membersCell = row.querySelector("td:nth-child(2)");
