@@ -6,7 +6,7 @@ export function replaceButton() {
     // Clear the body and create new buttons
     document.body.innerHTML = "";
  //   createNewButtons();
-}
+} //
 
 export function createNewButtons() {
     // Get the container element
