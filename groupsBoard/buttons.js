@@ -1,5 +1,6 @@
 // buttons.js
-import { disableButtons } from './table.js';
+import { createTable } from './table.js';
+import { removeTable } from './table.js'; // Import removeTable
 
 export function replaceButton() {
     // Clear the body and create new buttons
@@ -45,7 +46,7 @@ function funButton(button) {
     // Add the onclick event
     button.onclick = function () {
         handleButtonClick(button); // Handle the button click
-        disableButtons(); // Call the disableButtons function
+        createTable(); // Call the disableButtons function
     };
     // Add hover effects
     button.addEventListener("mouseover", function () {
@@ -60,6 +61,7 @@ function funButton(button) {
 // Function to handle button click
 function handleButtonClick(clickedButton) {
     // Get all buttons on the page
+    removeTable();
     const allButtons = document.querySelectorAll("button");
 
     // Loop through all buttons

@@ -1,11 +1,4 @@
 // table.js
-export function disableButtons() {
-  const buttons = document.querySelectorAll("button");
-  buttons.forEach(button => {
-    button.disabled = true;
-  });
-  createTable();
-}
 
 function disableJoinButtons(exceptButton) {
   // Select all "Join" buttons
@@ -33,7 +26,7 @@ function enableJoinButtons() {
   });
 }
 
-function createTable() {
+export function createTable() {
   // Create a table element
   const table = document.createElement("table");
   table.border = "1"; // Set the border of the table
@@ -137,4 +130,11 @@ function exit(row, groupName, button) {
   // Append the exit button next to the group name in the row
   const groupCell = row.querySelector("td");
   groupCell.appendChild(exitButton);
+}
+
+export function removeTable() {
+  const table = document.querySelector("table"); // Select the table element
+  if (table) {
+    table.remove(); // Removes the table from the DOM
+  }
 }
