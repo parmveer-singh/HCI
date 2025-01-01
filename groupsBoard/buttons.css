@@ -28,6 +28,7 @@
   cursor: not-allowed;        /* Show 'not-allowed' cursor */
 }
 
+
 .join-button {
     background-color: #8d7eff; /* Green background by default */
     color: white;
@@ -53,6 +54,7 @@
     cursor: not-allowed;
   }
 
+  
 /* Exit button styles */
 .exit-button {
   background-color: red;
@@ -69,15 +71,7 @@
   background-color: darkred;
 }
 
-/* Join button styles (optional, if needed for a specific button) */
-.join-button {
-  background-color: #8d7eff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-}
+
 .course-button{
   background-color: #8d7eff;
   color: white;
@@ -90,7 +84,7 @@
   transition: background-color 0.3s, transform 0.3s;
 }
 
-/* General button hover effect */
+/* button hover effect */
 .course-button-style:hover {
   transform: scale(1.05); /* Scale up slightly on hover */
 }
@@ -98,4 +92,31 @@
 /* General button active effect (optional for click feedback) */
 .course-button-style:active {
   transform: scale(0.95); /* Scale down slightly on click */
+}
+
+/* Flex container styling */
+.button-container {
+  display: flex; /* Enables flexbox */
+  flex-direction: row; /* Arrange items in a row */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 20px; /* Space between buttons */
+  padding: 20px; /* Optional padding for the container */
+  background-color: #f9f9f9; /* Optional background for container */
+  border: 1px solid #ddd; /* Optional border for container */
+  border-radius: 10px; /* Optional rounded corners */
+}
+
+/* Optional: Styling for the table */
+table {
+  border-collapse: collapse; /* Optional, for a cleaner table border */
+  width: 80%; /* Optional, control table width */
+  margin: 50px auto; /* Center the table horizontally with top/bottom margins */
+}
+
+/* Table styling */
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
 }

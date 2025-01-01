@@ -4,10 +4,13 @@ import { disableButtons } from './table.js';
 export function replaceButton() {
     // Clear the body and create new buttons
     document.body.innerHTML = "";
-    createNewButtons();
+ //   createNewButtons();
 }
 
-function createNewButtons() {
+export function createNewButtons() {
+    // Get the container element
+    const container = document.getElementById("buttonContainer");
+
     // Create new buttons dynamically
     const button1 = document.createElement("button");
     button1.innerText = "Prog1";
@@ -30,11 +33,11 @@ function createNewButtons() {
     button4.classList.add("course-button"); // Add class to the button
     funButton(button4);
 
-    // Append the buttons to the body
-    document.body.appendChild(button1);
-    document.body.appendChild(button2);
-    document.body.appendChild(button3);
-    document.body.appendChild(button4);
+    // Append the buttons to the button container (flexbox layout)
+    container.appendChild(button1);
+    container.appendChild(button2);
+    container.appendChild(button3);
+    container.appendChild(button4);
 }
 
 // Function to apply styles to the button

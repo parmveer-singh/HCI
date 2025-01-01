@@ -8,13 +8,20 @@
   </head>
   <body>
     <button id="entryButton">Course!</button>
+    <div class="button-container" id="buttonContainer">
+      <!-- Buttons will be dynamically added here -->
+    </div>
+
     <script type="module">
-      import { replaceButton } from "./buttons.js";
+      import { createNewButtons } from "./buttons.js";
 
       // Call replaceButton to start the process
       document
         .getElementById("entryButton")
-        .addEventListener("click", replaceButton);
+        .addEventListener("click", function () {
+          createNewButtons(); // Call to create new buttons
+          document.getElementById("entryButton").remove(); // Remove the entry button
+        });
     </script>
   </body>
 </html>
