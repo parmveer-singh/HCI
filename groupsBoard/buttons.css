@@ -78,3 +78,24 @@
   cursor: pointer;
   border-radius: 5px;
 }
+.course-button{
+  background-color: #8d7eff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* General button hover effect */
+.course-button-style:hover {
+  transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+/* General button active effect (optional for click feedback) */
+.course-button-style:active {
+  transform: scale(0.95); /* Scale down slightly on click */
+}
