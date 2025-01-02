@@ -1,54 +1,97 @@
-/* Add styling for join buttons */
-/* Target the button using its id */
-#courseButton {
-  background-color:  blue;  /* Green background color */
-  color: white;               /* White text color */
-  padding: 10px 20px;         /* Add some padding */
-  border: none;               /* Remove border */
-  border-radius: 5px;         /* Round the corners */
-  font-size: 16px;            /* Set font size */
-  cursor: pointer;           /* Change cursor to pointer when hovering */
-  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+/* Button styling */
+#entryButton {
+  background-color: blue;  /* Blue background */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Add hover effect */
-#courseButton:hover {
-  background-color: blue;  /* Slightly darker green on hover */
-  transform: scale(1.05);      /* Slight zoom effect on hover */
+#entryButton:hover {
+  background-color: darkblue;  /* Slightly darker blue on hover */
+  transform: scale(1.05);
 }
 
-/* Focus style (when the button is clicked or focused) */
-#courseButton:focus {
-  outline: none;              /* Remove outline */
+#entryButton:focus {
+  outline: none;
 }
 
-/* Disabled button style */
-#courseButton:disabled {
-  background-color: grey;     /* Grey background when disabled */
-  cursor: not-allowed;        /* Show 'not-allowed' cursor */
+#entryButton:disabled {
+  background-color: grey;
+  cursor: not-allowed;
 }
 
+/* Course button styling */
+.course-button {
+  background-color: #8d7eff; /* Pink background */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.course-button:hover {
+  background-color: #7a6ce8; /* Slightly darker pink on hover */
+  transform: scale(1.05);
+}
+
+.course-button:active {
+  transform: scale(0.95); /* Slight shrink when clicked */
+}
+
+/* Join button styling */
 .join-button {
-    background-color: #4CAF50; /* Green background by default */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  
-  .join-button:hover {
-    background-color: #45a049; /* Slightly darker green on hover */
-    transform: scale(1.05);
-  }
-  
-  .join-button:focus {
-    outline: none; /* Remove focus outline */
-  }
-  
-  .join-button:disabled {
-    background-color: grey; /* Grey background when disabled */
-    cursor: not-allowed;
-  }
+  background-color: #8d7eff; /* Keep the pink color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.join-button:hover {
+  background-color: #7a6ce8; /* Darker pink on hover */
+  transform: scale(1.05);
+}
+
+.join-button:focus {
+  outline: none;
+}
+
+.join-button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+/* Exit button styling */
+.exit-button {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.exit-button:hover {
+  background-color: darkred;
+}
+
+/* Group container styling */
+.group-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
