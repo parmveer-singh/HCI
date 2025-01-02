@@ -452,4 +452,19 @@ body {
       font-size: 0.8rem;
     }  
   }
+
+
+.grading-input {
+    width: 80px;
+    padding: 4px;
+}
+.grading-submit {
+    padding: 4px 8px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.feedback-submit {
+    padding: 4px 8px;
+    cursor: pointer;
+}
 }

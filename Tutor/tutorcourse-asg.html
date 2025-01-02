@@ -72,7 +72,10 @@
                     </td>
                     <td><a href="#"><i class="bx bxs-file-pdf"></i></a></td>
                     <td><a href="a1_feedback.pdf">John Doe_feedback.pdf</a></td>
-                    <td>90%</td>
+                    <td class="grading">
+                        <input type="text" placeholder="Enter marks" class="grading-input" />
+                        <button class="grading-submit" onclick="submitMarks(this)">Submit</button>
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">Alice Johnson</a></td>
@@ -88,7 +91,10 @@
                         <button class="submit-btn" onclick="openFileExplorer('fileInputA2')">Submit</button>
                         <input type="file" id="fileInputA2" class="file-input" style="display:none;" onchange="handleFileSelect(event)">
                     </td>
-                    <td></td>
+                    <td class="grading">
+                        <input type="text" placeholder="Enter marks" class="grading-input" />
+                        <button class="grading-submit" onclick="submitMarks(this)">Submit</button>
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">Charlie Brown</a></td>
@@ -101,7 +107,10 @@
                     </td>
                     <td><a href="#"><i class="bx bxs-file-pdf"></i></a></td>
                     <td><a href="a3_feedback.pdf">Charlie Brown_feedback.pdf</a></td>
-                    <td>84%</td>
+                    <td class="grading">
+                        <input type="text" placeholder="Enter marks" class="grading-input" />
+                        <button class="grading-submit" onclick="submitMarks(this)">Submit</button>
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">Daisy Green</a></td>
@@ -114,7 +123,10 @@
                     </td>
                     <td><a href="#"><i class="bx bxs-file-pdf"></i></a></td>
                     <td><a href="a4_feedback.pdf">Daisy Green_feedback.pdf</a></td>
-                    <td>91%</td>
+                    <td class="grading">
+                        <input type="text" placeholder="Enter marks" class="grading-input" />
+                        <button class="grading-submit" onclick="submitMarks(this)">Submit</button>
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">Evan White</a></td>
@@ -127,7 +139,10 @@
                     </td>
                     <td><a href="#"><i class="bx bxs-file-pdf"></i></a></td>
                     <td><a href="a5_feedback.pdf">Evan White_feedback.pdf</a></td>
-                    <td>98%</td>
+                    <td class="grading">
+                        <input type="text" placeholder="Enter marks" class="grading-input" />
+                        <button class="grading-submit" onclick="submitMarks(this)">Submit</button>
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">Grace Blue</a></td>
@@ -143,7 +158,10 @@
                         <button class="submit-btn" onclick="openFileExplorer('fileInputA6')">Submit</button>
                         <input type="file" id="fileInputA6" class="file-input" style="display:none;" onchange="handleFileSelect(event)">
                     </td>
-                    <td></td>
+                    <td class="grading">
+                        <input type="text" placeholder="Enter marks" class="grading-input" />
+                        <button class="grading-submit" onclick="submitMarks(this)">Submit</button>
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">Hannah Pink</a></td>
@@ -159,7 +177,10 @@
                         <button class="submit-btn" onclick="openFileExplorer('fileInputA7')">Submit</button>
                         <input type="file" id="fileInputA7" class="file-input" style="display:none;" onchange="handleFileSelect(event)">
                     </td>
-                    <td></td>
+                    <td class="grading">
+                        <input type="text" placeholder="Enter marks" class="grading-input" />
+                        <button class="grading-submit" onclick="submitMarks(this)">Submit</button>
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">Jane Smith</a></td>
@@ -175,7 +196,10 @@
                         <button class="submit-btn" onclick="openFileExplorer('fileInputA8')">Submit</button>
                         <input type="file" id="fileInputA8" class="file-input" style="display:none;" onchange="handleFileSelect(event)">
                     </td>
-                    <td></td>
+                    <td class="grading">
+                        <input type="text" placeholder="Enter marks" class="grading-input" />
+                        <button class="grading-submit" onclick="submitMarks(this)">Submit</button>
+                    </td>
                 </tr>
             </tbody>
         </table>
@@ -192,6 +216,19 @@
                 alert(`File selected: ${file.name}`);
             }
         }
+        function openFileExplorer() {
+            const fileInput = event.target.nextElementSibling;
+            fileInput.click();
+        }
+        function submitMarks(button) {
+            const inputField = button.previousElementSibling;
+            const marks = inputField.value.trim();
+            if (marks) {
+                button.parentElement.innerHTML = `<span>${marks}</span>`;
+            } else {
+                alert("Please enter valid marks!");
+            }
+        } 
     </script>
 
 </body>
