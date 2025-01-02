@@ -1,0 +1,60 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", serif;
+}
+  
+body {
+  color: white;
+  background: black;
+}
+
+
+.title {
+    margin-bottom: 20px;
+    i {
+        color: #8D7EFF;
+        .profile-details {
+            color: white;
+        }
+    }
+}
+
+.profile-details {
+    margin-bottom: 20px;
+}
+
+.details {
+    margin-left: 120px;
+    margin-top: 40px;
+    border: 2px solid #1e1e1e;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.name {
+    display: inline-flex;
+    gap: 100px;
+}
+
+.first-name-entry, .last-name-entry, 
+.position-entry, .email-entry, .course-entry {
+    background-color: black;
+    padding: 6px 12px;
+    border: 2px solid #1e1e1e;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-right: 50px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.868);
+}
+
+.first-name-title, .last-name-title, .position-title,
+.email-title, .course-title {
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+    color: gray;
+}

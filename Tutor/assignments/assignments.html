@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mission Submit</title>  
+    
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" href="asg-style.css">
+    <link rel="stylesheet"  href="../../style/sidebar.css">
+    <link rel="stylesheet"  href="../../style/header.css">
+
+    <!-- Boxicons link -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Font link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+    Mission Submit <span class="divider">/</span>Assignments
+</header>  
+
+<!-- Navigation Bar -->
+<nav class="sidebar">
+    <ul>
+        <li>
+            <a href="../home/home.html">
+                <i class="bx bx-home-alt"></i>
+                <span class="tooltip">home</span>
+            </a>
+        </li>
+        <li>
+            <a href="../courses/courses.html">
+                <i class="bx bx-book-bookmark"></i>
+                <span class="tooltip">courses</span>
+            </a>
+        </li>
+        <li class="active">
+            <a href="assignments.html">
+                <i class="bx bx-task"></i>
+                <span class="tooltip">assignments</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!--Assignments Table--> 
+<div class="container">
+    <table class="asg-table">
+    <thead>
+        <tr>
+            <th>Student</th>
+            <th>Course</th>
+            <th>Status</th>
+            <th>Submission</th>
+            <th>Feedback</th>
+            <th>Grading</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="student">Grace B.</td>
+            <td class="course">
+                <a href="#">Prog 1</a>
+            </td>
+            <td class="status">
+                <div class="status-indicator status-todo">
+                    <span class="status-circle"></span>
+                    <span class="status-label">Pending</span>
+                </div>
+            </td>
+            <td class="submission">
+                <a href="#" class="submission-link">
+                    <i class="bx bxs-file-pdf"></i> 
+                </a>
+            </td>
+            <td class="feedback">
+                <input type="file" id="file-input" accept=".pdf" style="display: none;" />
+                <button id="submit-button">Submit</button>
+                <a href="#" id="pdf-link" class="submission-link" style="display: none;">
+                    <i class="bx bxs-file-pdf"></i>
+                </a>
+                <a href="#" id="edit-link" class="edit-link" style="display: none;">
+                    <i class="bx bx-edit-alt"></i>
+                </a>
+            </td>
+            <td class="grading">
+                <input type="text" class="grading-input" placeholder="Enter grade" onkeypress="handleGradeInput(event, this)" />
+            </td>
+        </tr>
+        <tr>
+            <td class="student">Hannah P.</td>
+            <td class="course">
+                <a href="#">Java</a>
+            </td>
+            <td class="status">
+                <div class="status-indicator status-todo">
+                    <span class="status-circle"></span>
+                    <span class="status-label">Pending</span>
+                </div>
+            </td>
+            <td class="submission">
+                <a href="#" class="submission-link">
+                    <i class="bx bxs-file-pdf"></i> 
+                </a>
+            </td>
+            <td class="feedback">
+                <input type="file" id="file-input" accept=".pdf" style="display: none;" />
+                <button id="submit-button">Submit</button>
+                <a href="#" id="pdf-link" class="submission-link" style="display: none;">
+                    <i class="bx bxs-file-pdf"></i>
+                </a>
+                <a href="#" id="edit-link" class="edit-link" style="display: none;">
+                    <i class="bx bx-edit-alt"></i>
+                </a>
+            </td>
+            <td class="grading">
+                <input type="text" class="grading-input" placeholder="Enter grade" onkeypress="handleGradeInput(event, this)" />
+            </td>
+        </tr>
+        <tr>
+            <td class="student">Jane H.</td>
+            <td class="course">
+                <a href="#">Java</a>
+            </td>
+            <td class="status">
+                <div class="status-indicator status-todo">
+                    <span class="status-circle"></span>
+                    <span class="status-label">Pending</span>
+                </div>
+            </td>
+            <td class="submission">
+                <a href="#" class="submission-link">
+                    <i class="bx bxs-file-pdf"></i> 
+                </a>
+            </td>
+            <td class="feedback">
+                <input type="file" id="file-input" accept=".pdf" style="display: none;" />
+                <button id="submit-button">Submit</button>
+                <a href="#" id="pdf-link" class="submission-link" style="display: none;">
+                    <i class="bx bxs-file-pdf"></i>
+                </a>
+                <a href="#" id="edit-link" class="edit-link" style="display: none;">
+                    <i class="bx bx-edit-alt"></i>
+                </a>
+            </td>
+            <td class="grading">
+                <input type="text" class="grading-input" placeholder="Enter grade" onkeypress="handleGradeInput(event, this)" />
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+<script src="asg-actions.js"></script>
+</body>
+</html>
