@@ -1,83 +1,61 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Poppins", serif;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
+    background-color: black;
 }
 
 .container {
     display: flex;
     width: 100%; 
     max-width: 20000px; 
-    height: 1000px; 
-}
-
-/* Welcome Section */
-.welcome-section {
-    flex: 1;
-    background-color: #a463f2;
-    color: #000000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    text-align: left;
-}
-
-.welcome-section h1 {
-    font-size: 4rem; 
-    font-weight: 900; 
-    margin-bottom: 10px;
-}
-
-.welcome-section h2 {
-    font-size: 3.5rem; 
-    font-weight: 400; 
-    margin-bottom: 10px;
-}
-
-.welcome-section p {
-    font-size: 1.5rem; 
-    font-weight: 400;
-    margin-top: 10px;
-}
-
-/* Login Section */
-.login-section {
-    flex: 1;
+    height: 1000px;
+    max-width: 600px;
+    height: auto;
     background-color: #000000;
-    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+}
+
+.login-section {
+    width: 100%;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    padding: 50px;
+    align-items: center; 
 }
 
 .login-header h2 {
-    font-size: 2.5rem; 
+    font-size: 1.2rem; 
     font-weight: 700; 
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #8D7EFF;
 }
 
 .login-header p {
     font-size: 1.5rem; 
     font-weight: 400;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 form {
     width: 100%;
     max-width: 400px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 form input {
@@ -88,7 +66,7 @@ form input {
     border-bottom: 2px solid #cccccc;
     background: none;
     color: white;
-    font-size: 1.2rem; 
+    font-size: 1rem;
 }
 
 form input::placeholder {
@@ -97,21 +75,21 @@ form input::placeholder {
 
 form input:focus {
     outline: none;
-    border-bottom: 2px solid #a463f2; 
+    border-bottom: 2px solid #8D7EFF; 
 }
 
 form button {
     width: 100%;
-    padding: 15px;
-    background-color: #a463f2; 
+    padding: 10px;
+    background-color: #8D7EFF; 
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 1.2rem; 
-    font-weight: bold;
+    font-size: 1rem; 
+    font-weight: 500;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: #9445e1;
+    background-color: rgb(149, 136, 248);
 }
