@@ -13,77 +13,11 @@
     />
     <style>
       /* Sidebar Styles */
-      .sidebar {
-        position: fixed;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%); /* Center vertically */
-        width: 60px; /* Smaller sidebar */
-        background-color: #fff; /* White background */
-        border-right: 1px solid #000; /* Simple border */
-        padding-top: 20px;
-        text-align: center;
-      }
-
-      .sidebar ul {
-        list-style-type: none;
-        padding: 0;
-      }
-
-      .sidebar ul li {
-        margin-bottom: 20px;
-        position: relative;
-      }
-
-      .sidebar ul li a {
-        text-decoration: none;
-        color: black;
-        font-size: 24px;
-        display: block;
-      }
-
-      .sidebar ul li a i {
-        display: block;
-      }
-
-      .sidebar ul li .tooltip {
-        position: absolute;
-        top: 50%;
-        left: 70px; /* Position the tooltip next to the icon */
-        transform: translateY(-50%);
-        background-color: #333;
-        color: #fff;
-        padding: 5px;
-        border-radius: 4px;
-        font-size: 14px;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease-in-out;
-        white-space: nowrap;
-      }
-
-      .sidebar ul li:hover .tooltip {
-        opacity: 1;
-        visibility: visible;
-      }
-
-      .sidebar ul li a:hover {
-        background-color: #f0f0f0;
-        border-radius: 8px;
-      }
 
       /* Body Content Styles */
       body {
         margin-left: 60px; /* Adjust body content to match smaller sidebar */
         padding: 20px;
-      }
-
-      #buttonContainer {
-        margin-top: 20px;
-      }
-
-      #entryButton {
-        margin-bottom: 20px;
       }
     </style>
   </head>

@@ -5,7 +5,7 @@
     left: 0;
     transform: translateY(-50%); /* Center vertically */
     width: 60px; /* Smaller sidebar */
-    background-color: #2f2f2f; /* Darker background for dark mode */
+  /*  background-color: #110101; /* Darker background for dark mode */
     border-right: 1px solid #444; /* Slight border for separation */
     padding-top: 20px;
     text-align: center;
@@ -24,7 +24,7 @@
   
   .sidebar ul li a {
     text-decoration: none;
-    color: #ccc; /* Light gray for text and icons */
+   /* color: #ccc; /* Light gray for text and icons */
     font-size: 24px;
     display: block;
   }
@@ -39,7 +39,7 @@
     left: 70px; /* Position the tooltip next to the icon */
     transform: translateY(-50%);
     background-color: #444; /* Dark background for tooltip */
-    color: #fff;
+    /*  color: #fff; */
     padding: 5px;
     border-radius: 4px;
     font-size: 14px;
