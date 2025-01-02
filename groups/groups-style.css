@@ -1,0 +1,252 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+/*Main content*/
+.main-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+/*Button styling */
+.entry-button {
+  background-color: #8D7EFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 0;
+  display: inline-block;
+}
+  
+.entry-button:hover {
+  background-color: #8d7effbc;
+  transform: scale(1.05);
+}
+  
+.entry-button:focus {
+  outline: none;
+}
+  
+.entry-button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+/* Courses container styling */
+.courses-container {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Course button styling */
+.course {
+  background-color: #8D7EFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.course:hover {
+  background-color: #8d7effbc;
+  transform: scale(1.05);
+}
+
+/*Table Styling*/
+.table-section {
+  margin-top: 20px;
+  margin-left: 120px;
+  margin-right: 20px;
+  width: calc(100% - 140px);
+  font-size: 1rem;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+.groups-table {
+  display: none;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.groups-table th {
+  font-weight: 600;
+  padding: 7px; 
+  text-align: center;
+}
+
+.groups-table td {
+  border: 1px solid rgba(221, 221, 221, 0.2); 
+  border-left: none;
+  border-right: none;
+  padding: 7px; 
+  text-align: center; 
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+
+/*join-button*/
+.join-button {
+  background-color: #8D7EFF;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 0;
+  display: inline-block;
+}
+  
+.join-button:hover {
+  background-color: #8d7effbc;
+  transform: scale(0.95);
+}
+
+.join-button:disabled {
+  background-color: gray;
+  cursor: not-allowed; /* Show the 'not-allowed' cursor */
+  opacity: 0.5; /* Make it visually appear disabled */
+  pointer-events: none; /* Prevent clicks */
+}
+
+.exit-button {
+  background-color: #8d7eff49;
+  color: white;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 0;
+  display: inline-block;
+}
+
+/*Page Title*/
+.header {
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin-left: 120px;
+  margin-top: 35px;
+}
+
+.divider {
+  font-size: 1.3rem; 
+  font-weight: 100;
+  margin: 0 15px; 
+  line-height: 1; 
+  display: inline-block;
+}
+
+/*Sidebar*/
+.sidebar {
+  z-index: 1;
+  display: inline-block; 
+  min-height: 200px;
+  width: 60px;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 1%;
+}
+
+.sidebar ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+.sidebar li {
+  padding: 20px 0;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: all ease-out 120ms;
+  
+  a {
+    list-style: none;
+    list-style-type: none ;
+    text-decoration: none;
+  }
+
+  i {
+    display: block;
+    font-size: 24px;
+    transition: all ease 450ms;
+    color: white;
+  }
+
+  .tooltip {
+    display: inline-block;
+    position: absolute;
+    background-color:#26222e;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-top: -26px;
+    left: 70px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 13px;
+    color: #8D7EFF;
+    letter-spacing: 0.5px;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -4px;
+      top: 10px;
+      transform: rotate(45deg);
+      width: 10px;
+      height: 10px;
+      background-color: inherit;
+    }
+  }
+
+  &:hover {
+    background-color:#8D7EFF;
+    border-radius: 20px;
+
+    .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+        
+  &.active {
+    i {
+      color: #26222e;
+    }
+  }
+}
