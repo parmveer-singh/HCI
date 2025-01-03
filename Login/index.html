@@ -33,19 +33,29 @@
           <h2 class="mission-submit">Mission Submit</h2>
           <p class="info">Log in to your account</p>
         </div>
-        <form>
-          <input type="text" placeholder="LUH-ID" />
+        <form id="loginForm" method="GET">
+          <input id="luhId" type="text" placeholder="LUH-ID" required />
           <div class="line"></div>
-          <input type="password" placeholder="Password" />
+          <input type="password" placeholder="Password" required />
           <div class="line"></div>
-          <button
-            type="button"
-            onclick="window.location.href='../Student/home/home.html';"
-          >
-            Login
-          </button>
+          <button type="submit">Login</button>
         </form>
       </div>
     </div>
+    <script>
+      // Listen for form submission to handle redirection based on LUH-ID
+      document.getElementById("loginForm").onsubmit = function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const luhId = document.getElementById("luhId").value;
+
+        // Set the form action based on LUH-ID
+        if (luhId.toLowerCase() === "tutor") {
+          window.location = "../Tutor/home/home.html"; // Redirect to Tutor's home
+        } else {
+          window.location = "../Student/home/home.html"; // Redirect to Student's home
+        }
+      };
+    </script>
   </body>
 </html>
