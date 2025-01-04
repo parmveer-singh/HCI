@@ -29,7 +29,7 @@ body {
 .entry-button {
   background-color: #8D7EFF;
   color: white;
-  padding: 10px 20px;
+  padding: 15px 45px;
   border: none;
   border-radius: 8px;
   font-size: 16px;
@@ -65,12 +65,13 @@ body {
 .course {
   background-color: #8D7EFF;
   color: white;
-  padding: 10px 20px;
+  padding: 15px 45px;
   border: none;
   border-radius: 5px;
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
+  margin-bottom: 50px
 }
 
 .course:hover {

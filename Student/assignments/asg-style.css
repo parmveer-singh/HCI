@@ -133,7 +133,7 @@ body {
 
 /*Grading Text style*/
 .grading-indicator.status-failed {
-  color: #CC4844;
+  color: #8D7EFF;
 }
 
 .grading-indicator.status-passed {
@@ -154,6 +154,26 @@ body {
 #submit-button:hover {
     background-color: #8d7eff90
 }
+.button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.redirect-button {
+  padding: 10px 20px;
+  background-color: #8D7EFF;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.redirect-button:hover {
+  background-color: #ff3232;
+}
+
 
 /*Screen based sizing*/
 @media only screen and (max-width: 979px) {

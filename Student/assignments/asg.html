@@ -1,107 +1,144 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mission Submit</title>  
-    
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mission Submit</title>
+
     <!--custom css link-->
-    <link rel="stylesheet"  href="asg-style.css">
-    <link rel="stylesheet"  href="../../style/sidebar.css">
-    <link rel="stylesheet"  href="../../style/header.css">
-    <link rel="stylesheet"  href="../../style/asg-table.css">
+    <link rel="stylesheet" href="asg-style.css" />
+    <link rel="stylesheet" href="../../style/sidebar.css" />
+    <link rel="stylesheet" href="../../style/header.css" />
+    <link rel="stylesheet" href="../../style/asg-table.css" />
 
     <!--boxicons link-->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
 
     <!--font link-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!--Header-->
     <header class="header">
-        Mission Submit <span class="divider">/</span>Assignments
-    </header>  
+      Mission Submit <span class="divider">/</span>Assignments
+    </header>
 
     <!--Navigation Bar-->
     <nav class="sidebar">
-        <ul>
+      <ul>
         <li>
-            <a href="../home/home.html">
-            <i class="bx bx-home-alt" ></i>
+          <a href="../home/home.html">
+            <i class="bx bx-home-alt"></i>
             <span class="tooltip">home</span>
-            </a>
+          </a>
         </li>
         <li>
-            <a href="../courses/courses.html">
+          <a href="../courses/courses.html">
             <i class="bx bx-book-bookmark"></i>
-            <span class="tooltip">courses</span></a>
+            <span class="tooltip">courses</span></a
+          >
         </li>
         <li class="active">
-            <a href="asg.html">
+          <a href="asg.html">
             <i class="bx bx-task"></i>
-            <span class="tooltip">assignments</span></a>
+            <span class="tooltip">assignments</span></a
+          >
         </li>
         <li>
-            <a href="../groups/groups.html">
+          <a href="../groups/groups.html">
             <i class="bx bx-group"></i>
-            <span class="tooltip">groups</span></a>
+            <span class="tooltip">groups</span></a
+          >
         </li>
-        </ul>
+      </ul>
     </nav>
 
     <!--Assignments Table-->
     <div class="container">
-    <table class="asg-table">
+      <table class="asg-table">
         <thead>
-            <tr>
-                <th>Assignment</th>
-                <th>Deadline</th>
-                <th>Status</th>
-                <th>Submission</th>
-                <th>Feedback</th>
-                <th>Grading</th>
-                <th>Course</th>
-            </tr>
+          <tr>
+            <th>Assignment</th>
+            <th>Deadline</th>
+            <th>Status</th>
+            <th>Submission</th>
+            <th>Feedback</th>
+            <th>Grading</th>
+            <th>Course</th>
+          </tr>
         </thead>
         <tbody>
-            <tr>
-                <td class="assignment">
-                    <a href="#" class="assignment-link">A8</a>
-                </td>
-                <td class="deadline">24.10.2024</td>
-                <td class="status">
-                    <div class="status-indicator status-todo">
-                        <span class="status-circle"></span>
-                        <span class="status-label">Pending</span>
-                    </div>
-                </td>
-                <td class="submission">
-                    <input type="file" id="file-input" accept=".pdf" style="display: none;" />
-                    <button id="submit-button">Submit</button>
-                    <a href="#" id="pdf-link" class="submission-link" style="display: none;">
-                        <i class="bx bxs-file-pdf"></i>
-                    </a>
-                    <a href="#" id="edit-link" class="edit-link" style="display: none;">
-                        <i class="bx bx-edit-alt"></i>
-                    </a>
-                </td>
-                <td class="feedback"> 
-                    <i class="bx bx-x" ></i>
-                </td>
-                <td class="grading">
-                    <i class="bx bx-x" ></i>
-                </td>
-                <td class="course">
-                    <a href="#">Course1</a>
-                </td>
-            </tr>
+          <tr>
+            <td class="assignment">
+              <a href="#" class="assignment-link">A8</a>
+            </td>
+            <td class="deadline">24.10.2024</td>
+            <td class="status">
+              <div class="status-indicator status-todo">
+                <span class="status-circle"></span>
+                <span class="status-label">Pending</span>
+              </div>
+            </td>
+            <td class="submission">
+              <input
+                type="file"
+                id="file-input"
+                accept=".pdf"
+                style="display: none"
+              />
+              <button id="submit-button">Submit</button>
+              <a
+                href="#"
+                id="pdf-link"
+                class="submission-link"
+                style="display: none"
+              >
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+              <a
+                href="#"
+                id="edit-link"
+                class="edit-link"
+                style="display: none"
+              >
+                <i class="bx bx-edit-alt"></i>
+              </a>
+            </td>
+            <td class="feedback">
+              <i class="bx bx-x"></i>
+            </td>
+            <td class="grading">
+              <i class="bx bx-x"></i>
+            </td>
+            <td class="course">
+              <a href="#">Course1</a>
+            </td>
+          </tr>
         </tbody>
-    </table>
-</div>
-<script src="asg-actions.js"></script>
-</body>
+      </table>
+
+      <!-- New Button with Redirection Link -->
+      <div class="button-container">
+        <a href="another-page.html">
+          <button id="redirect-button" class="redirect-button">
+            View previous submissions
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <script src="asg-actions.js"></script>
+  </body>
 </html>
