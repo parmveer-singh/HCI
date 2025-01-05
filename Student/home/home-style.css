@@ -100,6 +100,7 @@ body {
     justify-content: flex-start; /* Align items to the start */
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
     box-sizing: border-box; /* Include padding and border in width calculations */
+    border-radius: 20px;
 }
 
 
@@ -183,7 +184,7 @@ body {
 .pfp {
     margin-bottom: 5px;
     i {
-        color: #8D7EFF;
+        color: hsl(247, 100%, 75%);
         font-size: 90px;
     }
     a:hover {
@@ -219,7 +220,99 @@ body {
     font-weight: 700;
     margin-bottom: 10px;
 }
+.reminders{
+    align-self: center;
+    width: 350px;
+    height: 200px;
+    border-radius:50%;
+    padding-bottom: 200px;
+}
+.rem-upload{
+    font-size: 14px;
+}
+.rem-upload img{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: transform 1.5s ease;
+}
+.rem-upload p {
+    position: absolute; 
+    top: 30%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin: 0; 
+    color: white; 
+    font-weight: bold; 
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px; 
+    border-radius: 5px; 
+    overflow: hidden;
+}
 
+.rem-upload img:hover{
+    background-color: hsl(247, 100%, 75%);
+    transition: transform 1.5s ease;
+}
+.rem-missed img{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.rem-missed p {
+    font-size: 14px;
+    position: absolute; 
+    top: 39%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    margin: 0; 
+    color: white;
+    font-weight: bold; 
+    text-align: left; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 5px; 
+    overflow: hidden;
+}
+.rem-missed{
+    font-size: 14px;
+}
+
+.rem-missed img:hover{
+    background-color: hsl(247, 100%, 75%);
+    transition: transform 1.5s ease;
+}
+.rem-feedback img{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.rem-feedback p {
+    font-size: 14px;
+    position: absolute; 
+    top: 48%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin: 0;
+    color: white; 
+    font-weight: bold; 
+    text-align: left; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.rem-feedback{
+    font-size: 14px;
+}
+
+.rem-feedback img:hover{
+    background-color: hsl(247, 100%, 75%);
+    transition: transform 1.5s ease;
+}
 .submit-deadline {
     text-align: center;
     background-color: #8D7EFF;
