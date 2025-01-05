@@ -28,7 +28,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 300px;
+    gap: 20px;
     color: black;
     margin-bottom: 90px;
     width: calc(100% - 10%); /* Deduct profile section's width */
@@ -38,7 +38,6 @@ body {
     flex-wrap: wrap; /* Handle overflow gracefully */
     box-sizing: border-box; /* Include padding and border in width calculations */
 }
-
 
 .course-link {
     text-decoration: none
@@ -91,7 +90,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 300px;
+    gap: 20px;
     color: black;
     margin-bottom: 30px;
     width: calc(100% - 10%); /* Deduct the profile section's width */
@@ -102,8 +101,6 @@ body {
     box-sizing: border-box; /* Include padding and border in width calculations */
     border-radius: 20px;
 }
-
-
 
 .asg-item {
     background-color: #1e1e1e;
@@ -164,7 +161,8 @@ body {
     font-size: 0.9rem;
 }
 
-/*Profile Section*/.profile-section {
+/*Profile Section*/
+.profile-section {
     margin-top: 40px;
     width: 22%;
     background-color: black;
@@ -225,18 +223,20 @@ body {
     width: 350px;
     height: 200px;
     border-radius:50%;
-    padding-bottom: 200px;
+    margin-bottom: 80px;
 }
-.rem-upload{
+.rem-upload {
     font-size: 14px;
 }
+
 .rem-upload img{
     position: relative;
-    width: 80px;
+    width: 70px;
     height: 80px;
     border-radius: 50%;
     transition: transform 1.5s ease;
 }
+
 .rem-upload p {
     position: absolute; 
     top: 30%;
@@ -256,10 +256,11 @@ body {
     background-color: hsl(247, 100%, 75%);
     transition: transform 1.5s ease;
 }
+
 .rem-missed img{
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 85px;
     border-radius: 50%;
 }
 .rem-missed p {
@@ -284,12 +285,14 @@ body {
     background-color: hsl(247, 100%, 75%);
     transition: transform 1.5s ease;
 }
+
 .rem-feedback img{
     position: relative;
-    width: 80px;
+    width: 70px;
     height: 80px;
     border-radius: 50%;
 }
+
 .rem-feedback p {
     font-size: 14px;
     position: absolute; 
@@ -305,6 +308,7 @@ body {
     border-radius: 5px;
     overflow: hidden;
 }
+
 .rem-feedback{
     font-size: 14px;
 }
@@ -319,8 +323,8 @@ body {
     border-radius: 20px;
     padding: 20px;
     color: white;
-    font-size: 1.2rem;
-  }
+    font-size: 1rem;
+}
   
 
 @media only screen and (max-width: 979px) {
