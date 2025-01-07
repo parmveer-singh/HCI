@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <span class="status-icon">
                   <i class="bx bx-dots-horizontal-rounded bx-flashing"></i>
                 </span>
-                <span class="status-label">In Review</span>
+                <span class="status-label">Pending</span>
               </div>
             `;
       
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <span class="status-icon">
                   <i class="bx bx-dots-horizontal-rounded bx-flashing"></i>
                 </span>
-                <span class="status-label">In Review</span>
+                <span class="status-label">Pending</span>
               </div>
             `;
             
