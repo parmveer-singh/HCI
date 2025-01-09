@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mission Submit</title>  
+  
+  <!--custom css link-->
+  <link rel="stylesheet"  href="../css/groups.css">
+  <link rel="stylesheet"  href="../css/sidebar.css">
+  <link rel="stylesheet"  href="../css/header.css">
+
+  <!--boxicons link-->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <!--font link-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--Header-->
+  <header class="header">
+    Mission Submit <span class="divider">/</span> Groups
+  </header>  
+  
+  <!--Navigation Bar-->
+  <nav class="sidebar">
+    <ul>
+      <li>
+        <a href="home.html">
+        <i class="bx bx-home-alt" ></i>
+        <span class="tooltip">home</span>
+        </a>
+      </li>
+      <li>
+        <a href="courses.html">
+        <i class="bx bx-book-bookmark"></i>
+        <span class="tooltip">courses</span></a>
+      </li>
+      <li>
+        <a href="assignments.html">
+        <i class="bx bx-task"></i>
+        <span class="tooltip">assignments</span></a>
+      </li>
+      <li class="active">
+        <a href="groups.html">
+        <i class="bx bx-group"></i>
+        <span class="tooltip">groups</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Body Content -->
+  <div class="main-content">
+    <!-- Entry button section -->
+    <div class="entry-button-section">
+      Select a course to join<br>
+      <i class="bx bxs-hand-down bx-fade-down"></i><br><br>
+      <button class="entry-button">Courses</button>
+    </div>
+    <!-- Courses container -->
+    <div class="courses-container">
+      <button class="course">Human Computer Interaction</button>
+      <button class="course">Software Engineering</button>
+      <button class="course">Programming II</button>
+      <button class="course">IT Security</button>
+    </div>
+  </div>
+
+  <!--Table Section--> 
+  <div class="table-section">
+    <table class="groups-table">
+      <thead>
+        <tr>
+          <th>Groups</th>
+          <th>Members</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-group="1">
+          <td>Group 1</td>
+          <td class="member-count available">
+            <div class="group-info">
+              <div class="number">4/5</div>
+              <div class="group-icon" data-members="Alice K., Bob J., Charlie F., Dana F.">
+                <i class="bx bxs-group"></i>
+              </div>
+            </div>
+          </td>
+          <td><button class="join-button">Join</button></td>
+        </tr>
+        <tr data-group="2">
+          <td>Group 2</td>
+          <td class="member-count available">
+            <div class="group-info">
+              <div class="number">1/5</div>
+              <div class="group-icon" data-members="Eve L.">
+                <i class="bx bxs-group"></i>
+              </div>
+            </div>
+          </td>
+          <td><button class="join-button">Join</button></td>
+        </tr>
+        <tr data-group="3">
+          <td>Group 3</td>
+          <td class="member-count full">
+            <div class="group-info">
+            <div class="number">5/5</div>
+            <div class="group-icon" data-members="Frank L., Grace A., Helen Q., Isaac R., Julia R.">
+            <i class="bx bxs-group"></i>
+            </div>
+            </div>
+          </td>
+          <td><i class="bx bx-x"></i></td>
+        </tr>
+        <tr data-group="4">
+          <td>Group 4</td>
+          <td class="member-count available">
+            <div class="group-info">
+            <div class="number">3/5</div>
+            <div class="group-icon" data-members="Kevin B., Laura F., Mike R.">
+              <i class="bx bxs-group"></i>
+            </div>
+            </div>
+          </td>
+          <td><button class="join-button">Join</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+
+  <!--Link to js-->
+  <script src="../js/groups.js"></script>
+</body>
+</html>
