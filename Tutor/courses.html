@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mission Submit</title>  
+  
+  <!--custom css link-->
+  <link rel="stylesheet" href="../css/courses.css">
+  <link rel="stylesheet"  href="../css/sidebar.css">
+  <link rel="stylesheet"  href="../css/header.css">
+
+  <!--boxicons link-->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <!--font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--Header-->
+  <header class="header">
+    Mission Submit <span class="divider">/</span> Courses
+  </header>  
+
+  <!--Navigation Bar-->
+  <nav class="sidebar"><ul>
+    <li>
+      <a href="home.html">
+      <i class="bx bx-home-alt" ></i>
+      <span class="tooltip">home</span>
+      </a>
+    </li>
+    <li class="active">
+      <a href="courses.html">
+      <i class="bx bx-book-bookmark"></i>
+      <span class="tooltip">courses</span></a>
+    </li>
+    <li>
+      <a href="assignments.html">
+      <i class="bx bx-task"></i>
+      <span class="tooltip">assignments</span></a>
+    </li>
+  </ul></nav>
+
+  <!--Filter Section-->
+  <div class="filter">
+    <ul>
+      <li><a href="#all" data-filter="all" class="filter-link active">all</a></li>
+      <li><a href="#active" data-filter="active" class="filter-link">active</a></li>
+      <li><a href="#completed" data-filter="completed" class="filter-link">completed</a></li>
+    </ul>
+  </div>
+
+  <!--Courses List-->
+  <div class="courses-container">
+  <div class="courses-box">
+    <div class="courses-item" data-status="active">
+      <a href="hci-asg.html" class="courses-item-link">
+        <div class="courses-item-bg"></div>
+        <div class="courses-item-title">Introduction to Human Computer Interaction</div>
+        <div class="courses-item-info">
+          <img src="../avatar/active.png" alt="avatar" width="55" height="50">
+          <div class="left-side">
+            Assignments: 10/12<br>
+          </div> 
+          <div class="right-side"> 
+            Prof. Dr. Michael Rohs<br> 
+          </div>
+        </div>
+      </a>
+    </div>
+      
+    <div class="courses-item" data-status="active">
+      <a href="#" class="courses-item-link">
+        <div class="courses-item-bg"></div>
+        <div class="courses-item-title">Introduction to Software Engineering</div>
+        <div class="courses-item-info">
+          <img src="../avatar/active.png" alt="avatar" width="55" height="50">
+          <div class="left-side">
+            Assignments: 9/13<br>
+          </div> 
+          <div class="right-side"> 
+            Prof. Dr. rer. nat. Kurt Schneider<br> 
+          </div>
+        </div>
+      </a>
+    </div>
+      
+    <div class="courses-item" data-status="completed">
+      <a href="#" class="courses-item-link">
+        <div class="courses-item-bg"></div>
+        <div class="courses-item-title">Mathematics 1: Linear Algebra</div>
+        <div class="courses-item-info">
+          <img src="../avatar/completed.png" alt="avatar" width="55" height="60">
+          <div class="left-side">
+            Assignments: 8/8<br>
+          </div> 
+          <div class="right-side"> 
+            Professor: Prof. Dr. Michael Rohs<br> 
+          </div>
+        </div>
+      </a>
+    </div>
+      
+    <div class="courses-item" data-status="completed">
+      <a href="#" class="courses-item-link">
+        <div class="courses-item-bg"></div>
+        <div class="courses-item-title">Programming I</div>
+        <div class="courses-item-info">
+          <img src="../avatar/completed.png" alt="avatar" width="55" height="60">
+          <div class="left-side">
+            Assignments: 11/11<br>
+          </div> 
+          <div class="right-side"> 
+            Professor: Jun.-Prof. Caroline Lassueur<br> 
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="courses-item" data-status="active">
+      <a href="#" class="courses-item-link">
+        <div class="courses-item-bg"></div>
+        <div class="courses-item-title">Introduction to IT-Security</div>
+        <div class="courses-item-info">
+          <img src="../avatar/new.png" alt="avatar" width="60" height="50">
+          <div class="left-side">
+            Assignments: 0/13<br>
+          </div> 
+          <div class="right-side"> 
+            Professor: Jun.-Prof. Caroline Lassueur<br>
+          </div>
+        </div>
+      </a>
+    </div>
+      
+    <div class="courses-item" data-status="active">
+      <a href="#" class="courses-item-link">
+        <div class="courses-item-bg"></div>
+        <div class="courses-item-title">Programming II</div>
+        <div class="courses-item-info">
+          <img src="../avatar/active.png" alt="avatar" width="55" height="50">
+          <div class="left-side">
+            Assignments: 11/12<br>
+          </div> 
+          <div class="right-side"> 
+            Professor: apl. Prof. Dr.-Ing. habil. Matthias Becker<br> 
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  </div>
+
+  <!--Link to js file-->
+  <script src="../js/courses.js"></script>
+</body>
+</html>

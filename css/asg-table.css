@@ -1,0 +1,186 @@
+
+.asg-container {  
+    margin-top: 20px;
+    margin-left: 120px;
+    margin-right: 20px;
+    width: calc(100% - 140px);
+    font-size: 1rem;
+    overflow-x: auto;
+    box-sizing: border-box;
+}
+
+.asg-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    .active-asg {
+        background-color: rgb(141, 126, 255, 0.1);
+    }
+}
+
+th {
+    font-weight: 600;
+    padding: 7px; 
+    text-align: center; 
+}
+
+td { 
+    font-size: 1rem;
+    border: 1px solid rgba(221, 221, 221, 0.15); 
+    border-left: none;
+    border-right: none;
+    padding: 7px; 
+    text-align: center; 
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        display: inline-flex;
+        list-style: none;
+        list-style-type: none;
+        color: white;
+        text-decoration: none;
+    }
+
+    i {
+        display: block;
+        font-size: 26px;
+        transition: color 0.3s ease;
+        color: white;
+    }
+
+    .assignment-link, .pdf-link, 
+    .edit-link, .feedback-text, .course-link, .submission-link {
+        text-decoration: underline;
+        text-decoration-color: gray;
+        text-decoration-thickness: 1px;   
+    }
+
+    .assignment-link:hover, .pdf-link:hover i, 
+    .edit-link:hover i, .feedback-text:hover, .course-link:hover,
+    .submission-link:hover i {
+        color: #8d7eff;
+    }
+
+    .disabled i {
+        color: #6060605d;
+    }
+}
+
+.grading {
+    .grading-indicator.status-failed {
+        color: #CC4844;
+    }
+    
+    .grading-indicator.status-passed {
+        color: #4454CC;
+    }
+}
+
+.review-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.review-container i {
+    color: #8D7EFF;
+    font-size: 18px;
+}
+
+.status {
+    
+    .status-indicator {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 2px 9px;
+        border-radius: 20px;
+        font-size: 14px;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .status-pending {
+        background-color: rgb(69, 47, 109, 0.4);
+        i {
+            color: rgb(69, 47, 109);
+            font-size: 14px;
+        }
+    }        
+
+    .status-missed {
+        background-color: rgb(109, 53, 47, 0.4);
+
+        i {
+        color: #CC4844;
+        font-size: 14px;
+        }
+    }
+    
+    .status-done {
+        background-color: rgb(40, 68, 107, 0.4);
+
+        i {
+        color: #4454CC;
+        font-size: 14px;
+        }
+    }
+
+    .status-upcoming {
+        background-color: #1e1e1eac;
+
+        i {
+        color: #606060;
+        font-size: 14px;
+        }
+    }
+}
+
+button {
+    background-color: #8D7EFF;
+    color: black;
+    border-radius: 8px;
+    padding: 4px 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #8d7eff90
+}
+
+.styled-input {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 5px;
+    width: 80px;
+}
+
+.styled-input:focus {
+    outline: none;                
+    border: 1px solid #8D7EFF;
+    box-shadow: 0 0 5px #8D7EFF;
+}
+
+@media only screen and (max-width: 979px) {
+    th {
+        font-size: 0.8rem;
+    }
+
+    td {
+        font-size: 0.8rem;
+        .review-container i {
+            color: #8D7EFF;
+            font-size: 0.8rem;
+        }
+
+        .status-label {
+            font-size: 0.8rem;
+        }
+    }
+}

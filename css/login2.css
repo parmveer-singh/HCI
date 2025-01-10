@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+/* Main Section (Description) */
+#main-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+#main-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#main-section .line {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.488);
+    width: 30%;
+    margin: 0 auto 16px;
+}
+#main-section p {
+  font-size: 1.2rem;
+  text-align: top;
+  color: #8D7EFF;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Login Section */
+#login {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.login-section {
+    width: 500px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+#login .login-header h2 {
+    font-size: 1.2rem; 
+    font-weight: 700; 
+    margin-bottom: 30px;
+    text-align: center;
+    color: #8D7EFF;
+}
+
+#login form {
+    width: 100%;
+    max-width: 600px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login input {
+    width: 100%;
+    padding: 15px 0; 
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 2px solid #cccccc;
+    background: none;
+    color: white;
+    font-size: 1rem;
+}
+
+#login input::placeholder {
+    color: #aaaaaa; 
+}
+
+#login input:focus {
+    outline: none;
+    border-bottom: 2px solid #8D7EFF; 
+}
+
+#login p {
+    font-size: 1.5rem; 
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8D7EFF; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem; 
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#login button:hover {
+  background-color: #6a57fd;
+}
+
+/* From Uiverse.io by cssbuttons-io */ 
+.start {
+button {
+  --color: #8D7EFF;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+  background-color: black;
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+button:active:before {
+  background: #6a57fd;
+  transition: background 0s;
+}
+}
