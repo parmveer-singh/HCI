@@ -28,7 +28,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 16%;
     color: black;
     margin-bottom: 90px;
     width: calc(100% - 10%); /* Deduct profile section's width */
@@ -90,7 +90,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 16%;
     color: black;
     margin-bottom: 30px;
     width: calc(100% - 10%); /* Deduct the profile section's width */
@@ -330,7 +330,7 @@ body {
 @media only screen and (max-width: 979px) {
 
     .courses-container, .asg-container {
-        gap: 15px;
+        gap: 200px;
         width: 100%; /* Full width on smaller screens */
         padding-right: 10px; /* Adjust padding for smaller space */
     }
