@@ -125,7 +125,7 @@
     text-align: right;
 }
 
-.button {
+.submission button {
     padding: 6px 10px;
     background-color: #8D7EFF;
     font-weight: 500;
@@ -135,10 +135,31 @@
     transition: background-color 0.3s ease;
 }
 
-.button:hover {
+.submission button:hover {
     background-color: #6b5cc6;
 }
 
+.submission {
+    i {
+        display: block;
+        font-size: 26px;
+        transition: color 0.3s ease;
+        color: white;
+    }
+
+    .assignment-link, .pdf-link, 
+    .edit-link, .feedback-text, .course-link, .submission-link {
+        text-decoration: underline;
+        text-decoration-color: gray;
+        text-decoration-thickness: 1px;   
+    }
+
+    .assignment-link:hover, .pdf-link:hover i, 
+    .edit-link:hover i, .feedback-text:hover, .course-link:hover,
+    .submission-link:hover i {
+        color: #8d7eff;
+    }
+}
 .asg-course {
     margin-top: 10px;
     font-size: 0.9rem;

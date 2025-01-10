@@ -24,5 +24,51 @@ function startCountdown() {
     setInterval(updateCountdown, 1000);
   }
 
-  // Start the countdown when the page loads
-  window.onload = startCountdown;
+// Start the countdown when the page loads
+window.onload = startCountdown;
+
+// Handle Submit-Button
+document.addEventListener("DOMContentLoaded", () => {
+  // Loop through each assignment container
+  document.querySelectorAll(".asg-item").forEach((assignmentContainer) => {
+    const submissionSection = assignmentContainer.querySelector(".submission");
+    const fileInput = submissionSection.querySelector(".file-input");
+    const submitButton = submissionSection.querySelector(".submit-button");
+    const pdfLink = submissionSection.querySelector(".pdf-link");
+    const editLink = submissionSection.querySelector(".edit-link");
+
+    // Add click event to the submit button
+    submitButton.addEventListener("click", () => {
+      console.log("Submit button clicked!"); // Debug log
+      fileInput.click(); // Trigger the file input click
+    });
+
+    // Handle file input change
+    fileInput.addEventListener("change", () => {
+      const file = fileInput.files[0];
+
+      if (file && file.type === "application/pdf") {
+        console.log("Valid PDF file selected"); // Debug log
+
+        // Hide the submit button and show icons
+        submitButton.style.display = "none";
+        pdfLink.style.display = "inline-block";
+        editLink.style.display = "inline-block";
+
+        // Set the PDF link for preview
+        pdfLink.href = URL.createObjectURL(file);
+        pdfLink.target = "_blank";
+
+        // Enable re-upload functionality
+        editLink.addEventListener("click", (e) => {
+          e.preventDefault();
+          fileInput.click();
+        });
+      } else {
+        alert("Please upload a valid PDF file.");
+        fileInput.value = ""; // Reset the input
+      }
+    });
+  });
+});
+
