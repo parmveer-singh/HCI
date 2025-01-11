@@ -8,6 +8,7 @@
     display: flex;
 }
 
+
 body {
     background-color: black;
     color: white;
@@ -41,6 +42,7 @@ body {
     flex-wrap: wrap; /* Handle overflow gracefully */
     box-sizing: border-box; /* Include padding and border in width calculations */
 }
+
 
 .course-link {
     text-decoration: none
@@ -88,6 +90,7 @@ body {
 }
 
 /*Assignments Section*/
+
 .asg-container {
     display: flex;
     flex-direction: row;
@@ -100,7 +103,6 @@ body {
     justify-content: flex-start; /* Align items to the start */
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
     box-sizing: border-box; /* Include padding and border in width calculations */
-    border-radius: 20px;
 }
 
 .asg-item {
@@ -138,7 +140,7 @@ body {
     text-align: right;
 }
 
-.submission button {
+.button {
     padding: 6px 10px;
     background-color: #8D7EFF;
     font-weight: 500;
@@ -148,31 +150,10 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.submission button:hover {
+.button:hover {
     background-color: #6b5cc6;
 }
 
-.submission {
-    i {
-        display: block;
-        font-size: 26px;
-        transition: color 0.3s ease;
-        color: white;
-    }
-
-    .assignment-link, .pdf-link, 
-    .edit-link, .feedback-text, .course-link, .submission-link {
-        text-decoration: underline;
-        text-decoration-color: gray;
-        text-decoration-thickness: 1px;   
-    }
-
-    .assignment-link:hover, .pdf-link:hover i, 
-    .edit-link:hover i, .feedback-text:hover, .course-link:hover,
-    .submission-link:hover i {
-        color: #8d7eff;
-    }
-}
 .asg-course {
     margin-top: 10px;
     font-size: 0.9rem;
@@ -197,11 +178,10 @@ body {
     bottom: 50px;
 }
 
-
 .pfp {
     margin-bottom: 5px;
     i {
-        color: hsl(247, 100%, 75%);
+        color: #8D7EFF;
         font-size: 90px;
     }
     a:hover {
@@ -237,38 +217,9 @@ body {
     font-weight: 700;
     margin-bottom: 10px;
 }
-.reminders{
-    align-self: center;
-    width: 350px;
-    border-radius:50%;
-    margin-bottom: 80px;
-}
-.rem-upload {
-    font-size: 14px;
-}
 
-.rem-upload img{
-    position: relative;
-    width: 70px;
-    height: 80px;
-    border-radius: 50%;
-    transition: transform 1.5s ease;
-}
-
-.rem-upload p {
-    margin: 0; 
-    color: white; 
-    font-weight: bold; 
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px; 
-    border-radius: 5px; 
-    overflow: hidden;
-}
-
-.rem-upload img:hover{
-    background-color: hsl(247, 100%, 75%);
-    transition: transform 1.5s ease;
+.reminders {
+    margin-bottom: 20px;
 }
 
 .rem-missed img , .submit-deadline img  {
@@ -277,54 +228,6 @@ body {
     height: 85px;
     border-radius: 50%;
 }
-.rem-missed p {
-    font-size: 14px;
-    margin: 0; 
-    color: white;
-    font-weight: bold; 
-    text-align: left; 
-    background-color: rgba(0, 0, 0, 0.5); 
-    border-radius: 5px; 
-    overflow: hidden;
-}
-
-.rem-missed{
-    font-size: 14px;
-}
-
-.rem-missed img:hover{
-    background-color: hsl(247, 100%, 75%);
-    transition: transform 1.5s ease;
-}
-
-.rem-feedback img{
-    position: relative;
-    width: 70px;
-    height: 80px;
-    border-radius: 50%;
-}
-
-.rem-feedback p {
-    font-size: 14px;
-    margin: 0;
-    color: white; 
-    font-weight: bold; 
-    text-align: left; 
-    background-color: rgba(0, 0, 0, 0.5); 
-    padding: 5px;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.rem-feedback{
-    font-size: 14px;
-}
-
-.rem-feedback img:hover{
-    background-color: hsl(247, 100%, 75%);
-    transition: transform 1.5s ease;
-}
-
 .submit-deadline {
     display: flex;
     text-align: center;
@@ -344,36 +247,37 @@ body {
     margin-top: auto;
     margin-bottom: auto;
 }
-  
+
 @media only screen and (max-width: 979px) {
-    
     .profile-section {
         width: 350px;
     }
     .rem-upload, .rem-missed, .rem-feedback {
-    flex-direction: column;
-    }
-
-    .rem-upload img, .rem-missed img, .rem-feedback img  {
-    margin-left: auto;
-    margin-right: auto;
-    }
-    .rem-upload p, .rem-missed p, .rem-feedback p 
-    {
-        text-align: center;
-    }
+        flex-direction: column;
+        }
+    
+        .rem-upload img, .rem-missed img, .rem-feedback img  {
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .rem-upload p, .rem-missed p, .rem-feedback p 
+        {
+            text-align: center;
+        }
+    
 
     .courses-container, .asg-container {
         gap: 15px;
-        width: 100%;
-        padding-right: 10px;    
+        width: 100%; /* Full width on smaller screens */
+        padding-right: 10px; /* Adjust padding for smaller space */
     }
     
     .course-item, .asg-item {
-        width: calc(100% - 30px);
-        max-width: 250px;
+        width: calc(100% - 30px); /* Make items responsive */
+        max-width: 250px; /* Prevent items from becoming too wide */
     }
     
+
     .course-asg, .course-grade, .course-name, .course-prof,
     .asg-name, .asg-course, .deadline,
     .submit-button, .button {
@@ -384,26 +288,26 @@ body {
         font-size: 0.8rem;
     }
 }
-
 @media only screen and (max-width: 780px) {
     
-#main
-{
-flex-direction: column-reverse;
-}
-.profile-section
-{
-    bottom: 0;
-}
-.main-content,.profile-section
-{
-    margin-left: 80px;
+    #main
+    {
+    flex-direction: column-reverse;
+    }
+    .profile-section
+    {
+        bottom: 0;
+    }
+    .main-content,.profile-section
+    {
+        margin-left: 80px;
+    
+    }
+    
+    
+    }
 
-}
-
-
-}   
-.rem-upload , .rem-missed , .rem-feedback
+    .rem-upload , .rem-missed , .rem-feedback
 {
     display: flex;
     column-gap: 15px;
