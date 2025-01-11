@@ -1,425 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mission Submit - Tutor</title>
-  
-  <!--custom CSS link-->
-  <link rel="stylesheet" href="../css/asg-table.css">
-  <link rel="stylesheet" href="../css/sidebar.css">
-  <link rel="stylesheet" href="../css/header.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mission Submit - Tutor</title>
 
-  <!--boxicons link-->
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--custom CSS link-->
+    <link rel="stylesheet" href="../css/asg-table.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/header.css" />
 
-  <!--font link-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!--Header-->
-  <header class="header">
-    Mission Submit <span class="divider">/</span> 
-    Courses <span class="divider">/</span> 
-    Introduction to Human Computer Interaction
-  </header>  
+    <!--boxicons link-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
 
-  <!--Navigation Bar-->
-  <nav class="sidebar"><ul>
-    <li>
-      <a href="home.html">
-        <i class="bx bx-home-alt" ></i>
-        <span class="tooltip">home</span>
-      </a>
-    </li>
-    <li class="active">
-      <a href="courses.html">
-      <i class="bx bx-book-bookmark"></i>
-      <span class="tooltip">courses</span></a>
-    </li>
-    <li>
-      <a href="assignments.html">
-      <i class="bx bx-task"></i>
-      <span class="tooltip">assignments</span></a>
-    </li>
-  </ul></nav>
+    <!--font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      Mission Submit <span class="divider">/</span> Courses
+      <span class="divider">/</span>
+      Introduction to Human Computer Interaction
+    </header>
 
-  <!--Assignments Table--> 
-  <div class="asg-container">
-  <table class="asg-table">
-    <thead>
-      <tr>
-        <th>Assignment</th>
-        <th>Student</th>
-        <th>Status</th>
-        <th>Submission</th>
-        <th>Feedback</th>
-        <th>Grading</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="assignment">
-          <a href="#" class="assignment-link">A10</a>
-        </td>
-        <td class="student">Noah S.</td>
-        <td class="status">
-          <div class="status-indicator status-pending">
-            <i class="bx bx-loader-circle"></i>
-            <span class="status-label">Pending</span>
-          </div>
-        </td>
-        <td class="submission">
-          <div class="disabled"><i class="bx bx-x"></i></div>
-        </td>
-        <td class="feedback">
-          <div class="disabled"><i class="bx bx-x"></i></div>
-        </td>
-        <td class="grading">0</td>
-      </tr>
-      <tr class="active-asg">
-        <td class="assignment">
-          <a href="#" class="assignment-link">A10</a>
-        </td>
-        <td class="student">Grace B.</td>
-        <td class="status">
-          <div class="status-indicator status-done">
-            <i class="bx bxs-check-circle"></i>
-            <span class="status-label">Done</span>
-          </div>
-        </td>
-        <td class="submission">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
+    <!--Navigation Bar-->
+    <nav class="sidebar">
+      <ul>
+        <li>
+          <a href="home.html">
+            <i class="bx bx-home-alt"></i>
+            <span class="tooltip">home</span>
           </a>
-        </td>
-        <td class="feedback">
-          <input type="file" id="file-input" accept=".pdf" style="display: none;" />
-          <button id="submit-button">Submit</button>
-          <a href="#" id="pdf-link" class="submission-link" style="display: none;">
-            <i class="bx bxs-file-pdf"></i>
-          </a>
-          <a href="#" id="edit-link" class="edit-link" style="display: none;">
-            <i class="bx bx-edit-alt"></i>
-          </a>
-        </td>
-        <td class="grading">
-          <input type="text" class="grading-input styled-input" placeholder="Enter grade" onkeypress="handleGradeInput(event, this)" />
-        </td>
-      </tr>
-      <tr class="active-asg">
-        <td class="assignment">
-          <a href="#" class="assignment-link">A10</a>
-        </td>
-        <td class="student">Hannah P.</td>
-        <td class="status">
-          <div class="status-indicator status-done">
-            <i class="bx bxs-check-circle"></i>
-            <span class="status-label">Done</span>
-          </div>
-        </td>
-        <td class="submission">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
-          </a>
-        </td>
-        <td class="feedback">
-          <input type="file" id="file-input" accept=".pdf" style="display: none;" />
-          <button id="submit-button">Submit</button>
-          <a href="#" id="pdf-link" class="submission-link" style="display: none;">
-            <i class="bx bxs-file-pdf"></i>
-          </a>
-          <a href="#" id="edit-link" class="edit-link" style="display: none;">
-            <i class="bx bx-edit-alt"></i>
-          </a>
-        </td>
-        <td class="grading">
-          <input type="text" class="grading-input styled-input" placeholder="Enter grade" onkeypress="handleGradeInput(event, this)" />
-        </td>
-      </tr>
-      <tr class="active-asg">
-        <td class="assignment">
-          <a href="#" class="assignment-link">A10</a>
-        </td>
-        <td class="student">Max M.</td>
-        <td class="status">
-          <div class="status-indicator status-done">
-            <i class="bx bxs-check-circle"></i>
-            <span class="status-label">Done</span>
-          </div>
-        </td>
-        <td class="submission">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
-          </a>
-        </td>
-        <td class="feedback">
-          <input type="file" id="file-input" accept=".pdf" style="display: none;" />
-          <button id="submit-button">Submit</button>
-          <a href="#" id="pdf-link" class="submission-link" style="display: none;">
-              <i class="bx bxs-file-pdf"></i>
-          </a>
-          <a href="#" id="edit-link" class="edit-link" style="display: none;">
-              <i class="bx bx-edit-alt"></i>
-          </a>
-        </td>
-        <td class="grading">
-          <input type="text" class="grading-input styled-input" placeholder="Enter grade" onkeypress="handleGradeInput(event, this)" />
-        </td>
-      </tr>
-      <tr>
-        <td class="assignment">
-          <a href="#" class="assignment-link">A9</a>
-        </td>
-        <td class="student">Naoh S.</td>
-        <td class="status">
-          <div class="status-indicator status-missed">
-            <i class="bx bxs-x-circle"></i>
-            <span class="status-label">Missed</span>
-          </div>
-        </td>
-        <td class="submission">
-          <div class="disabled"><i class="bx bx-x"></i></div>
-        </td>
-        <td class="feedback">
-          <div class="disabled"><i class="bx bx-x"></i></div>
-        </td>
-        <td class="grading">0</td>
-      </tr>
-      <tr>
-        <td class="assignment">
-          <a href="#" class="assignment-link">A9</a>
-        </td>
-        <td class="student">Grace B.</td>
-        <td class="status">
-          <div class="status-indicator status-done">
-            <i class="bx bxs-check-circle"></i>
-            <span class="status-label">Done</span>
-          </div>
-        </td>
-        <td class="submission">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
-          </a>
-        </td>
-        <td class="feedback">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
-          </a>
-        </td>
-        <td class="grading">76%</td>
-      </tr>
-      <tr>
-        <td class="assignment">
-          <a href="#" class="assignment-link">A9</a>
-        </td>
-        <td class="student">Hannah P.</td>
-        <td class="status">
-          <div class="status-indicator status-done">
-            <i class="bx bxs-check-circle"></i>
-            <span class="status-label">Done</span>
-          </div>
-        </td>
-        <td class="submission">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
-          </a>
-        </td>
-        <td class="feedback">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
-          </a>
-        </td>
-        <td class="grading">78%</td>
-      </tr>
-      <tr>
-        <td class="assignment">
-          <a href="#" class="assignment-link">A9</a>
-        </td>
-        <td class="student">Max M.</td>
-        <td class="status">
-          <div class="status-indicator status-done">
-            <i class="bx bxs-check-circle"></i>
-            <span class="status-label">Done</span>
-          </div>
-        </td>
-        <td class="submission">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
-          </a>
-        </td>
-        <td class="feedback">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
-          </a>
-        </td>
-        <td class="grading">0</td>
-      </tr>
-      <tr>
-        <td class="assignment">
-          <a href="#" class="assignment-link">A8</a>
-        </td>
-        <td class="student">Noah S.</td>
-        <td class="status">
-          <div class="status-indicator status-done">
-            <i class="bx bxs-check-circle"></i>
-            <span class="status-label">Done</span>
-          </div>
-        </td>
-        <td class="submission">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
-          </a>
-        </td>
-        <td class="feedback">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
-          </a>
-        </td>
-        <td class="grading">92%</td>
-      </tr>
-      <tr>
-        <td class="assignment">
-          <a href="#" class="assignment-link">A8</a>
-        </td>
-        <td class="student">Grace B.</td>
-        <td class="status">
-          <div class="status-indicator status-missed">
-            <i class="bx bxs-x-circle"></i>
-            <span class="status-label">Missed</span>
-          </div>
-        </td>
-        <td class="submission">
-          <div class="disabled"><i class="bx bx-x"></i></div>
-        </td>
-        <td class="feedback">
-          <div class="disabled"><i class="bx bx-x"></i></div>
-        </td>
-        <td class="grading">0</td>
-      </tr>
-      <tr>
-        <td class="assignment">
-          <a href="#" class="assignment-link">A8</a>
-        </td>
-        <td class="student">Hannah P.</td>
-        <td class="status">
-          <div class="status-indicator status-done">
-            <i class="bx bxs-check-circle"></i>
-            <span class="status-label">Done</span>
-          </div>
-        </td>
-        <td class="submission">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
-          </a>
-        </td>
-        <td class="feedback">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
-          </a>
-        </td>
-        <td class="grading">56%</td>
-      </tr>
-      <tr>
-        <td class="assignment">
-          <a href="#" class="assignment-link">A8</a>
-        </td>
-        <td class="student">Max M.</td>
-        <td class="status">
-          <div class="status-indicator status-done">
-            <i class="bx bxs-check-circle"></i>
-            <span class="status-label">Done</span>
-          </div>
-        </td>
-        <td class="submission">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
-          </a>
-        </td>
-        <td class="feedback">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
-          </a>
-        </td>
-        <td class="grading">66%</td>
-      </tr>
-      <tr>
-        <td class="assignment">
-          <a href="#" class="assignment-link">A7</a>
-        </td>
-        <td class="student">Noah S.</td>
-        <td class="status">
-          <div class="status-indicator status-done">
-            <i class="bx bxs-check-circle"></i>
-            <span class="status-label">Done</span>
-          </div>
-        </td>
-        <td class="submission">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
-          </a>
-        </td>
-        <td class="feedback">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
-          </a>
-        </td>
-        <td class="grading">81%</td>
-      </tr>
-      <tr>
-        <td class="assignment">
-          <a href="#" class="assignment-link">A7</a>
-        </td>
-        <td class="student">Grace B.</td>
-        <td class="status">
-          <div class="status-indicator status-done">
-            <i class="bx bxs-check-circle"></i>
-            <span class="status-label">Done</span>
-          </div>
-        </td>
-        <td class="submission">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
-          </a>
-        </td>
-        <td class="feedback">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
-          </a>
-        </td>
-        <td class="grading">92%</td>
-      </tr>
-      <tr>
-        <td class="assignment">
-          <a href="#" class="assignment-link">A7</a>
-        </td>
-        <td class="student">Hannah P.</td>
-        <td class="status">
-          <div class="status-indicator status-done">
-            <i class="bx bxs-check-circle"></i>
-            <span class="status-label">Done</span>
-          </div>
-        </td>
-        <td class="submission">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
-          </a>
-        </td>
-        <td class="feedback">
-          <a href="#" class="submission-link">
-            <i class="bx bxs-file-pdf"></i> 
-          </a>
-        </td>
-        <td class="grading">77%</td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
+        </li>
+        <li class="active">
+          <a href="courses.html">
+            <i class="bx bx-book-bookmark"></i>
+            <span class="tooltip">courses</span></a
+          >
+        </li>
+        <li>
+          <a href="assignments.html">
+            <i class="bx bx-task"></i>
+            <span class="tooltip">assignments</span></a
+          >
+        </li>
+      </ul>
+    </nav>
 
-  <!--Link to js-->
-  <script src="../js/courses.js"></script>
-</body>
+    <!--Assignments Table-->
+    <div class="asg-container">
+      <table class="asg-table">
+        <thead>
+          <tr>
+            <th>Assignment</th>
+            <th>Student</th>
+            <th>Status</th>
+            <th>Submission</th>
+            <th>Feedback</th>
+            <th>Grading</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="assignment">
+              <a href="#" class="assignment-link">A10</a>
+            </td>
+            <td class="student">Noah S.</td>
+            <td class="status">
+              <div class="status-indicator status-pending">
+                <i class="bx bx-loader-circle"></i>
+                <span class="status-label">Pending</span>
+              </div>
+            </td>
+            <td class="submission">
+              <div class="disabled"><i class="bx bx-x"></i></div>
+            </td>
+            <td class="feedback">
+              <div class="disabled"><i class="bx bx-x"></i></div>
+            </td>
+            <td class="grading">0</td>
+          </tr>
+          <tr class="active-asg">
+            <td class="assignment">
+              <a href="#" class="assignment-link">A10</a>
+            </td>
+            <td class="student">Grace B.</td>
+            <td class="status">
+              <div class="status-indicator status-done">
+                <i class="bx bxs-check-circle"></i>
+                <span class="status-label">Done</span>
+              </div>
+            </td>
+            <td class="submission">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="feedback">
+              <input
+                type="file"
+                id="file-input"
+                accept=".pdf"
+                style="display: none"
+              />
+              <button id="submit-button">Submit</button>
+              <a
+                href="#"
+                id="pdf-link"
+                class="submission-link"
+                style="display: none"
+              >
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+              <a
+                href="#"
+                id="edit-link"
+                class="edit-link"
+                style="display: none"
+              >
+                <i class="bx bx-edit-alt"></i>
+              </a>
+            </td>
+            <td class="grading">
+              <input
+                type="text"
+                class="grading-input styled-input"
+                placeholder="Enter grade"
+                onkeypress="handleGradeInput(event, this)"
+              />
+            </td>
+          </tr>
+          <tr class="active-asg">
+            <td class="assignment">
+              <a href="#" class="assignment-link">A10</a>
+            </td>
+            <td class="student">Hannah P.</td>
+            <td class="status">
+              <div class="status-indicator status-done">
+                <i class="bx bxs-check-circle"></i>
+                <span class="status-label">Done</span>
+              </div>
+            </td>
+            <td class="submission">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="feedback">
+              <input
+                type="file"
+                id="file-input"
+                accept=".pdf"
+                style="display: none"
+              />
+              <button id="submit-button">Submit</button>
+              <a
+                href="#"
+                id="pdf-link"
+                class="submission-link"
+                style="display: none"
+              >
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+              <a
+                href="#"
+                id="edit-link"
+                class="edit-link"
+                style="display: none"
+              >
+                <i class="bx bx-edit-alt"></i>
+              </a>
+            </td>
+            <td class="grading">
+              <input
+                type="text"
+                class="grading-input styled-input"
+                placeholder="Enter grade"
+                onkeypress="handleGradeInput(event, this)"
+              />
+            </td>
+          </tr>
+          <tr class="active-asg">
+            <td class="assignment">
+              <a href="#" class="assignment-link">A10</a>
+            </td>
+            <td class="student">Max M.</td>
+            <td class="status">
+              <div class="status-indicator status-done">
+                <i class="bx bxs-check-circle"></i>
+                <span class="status-label">Done</span>
+              </div>
+            </td>
+            <td class="submission">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="feedback">
+              <input
+                type="file"
+                id="file-input"
+                accept=".pdf"
+                style="display: none"
+              />
+              <button id="submit-button">Submit</button>
+              <a
+                href="#"
+                id="pdf-link"
+                class="submission-link"
+                style="display: none"
+              >
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+              <a
+                href="#"
+                id="edit-link"
+                class="edit-link"
+                style="display: none"
+              >
+                <i class="bx bx-edit-alt"></i>
+              </a>
+            </td>
+            <td class="grading">
+              <input
+                type="text"
+                class="grading-input styled-input"
+                placeholder="Enter grade"
+                onkeypress="handleGradeInput(event, this)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="assignment">
+              <a href="#" class="assignment-link">A9</a>
+            </td>
+            <td class="student">Naoh S.</td>
+            <td class="status">
+              <div class="status-indicator status-missed">
+                <i class="bx bxs-x-circle"></i>
+                <span class="status-label">Missed</span>
+              </div>
+            </td>
+            <td class="submission">
+              <div class="disabled"><i class="bx bx-x"></i></div>
+            </td>
+            <td class="feedback">
+              <div class="disabled"><i class="bx bx-x"></i></div>
+            </td>
+            <td class="grading">0</td>
+          </tr>
+          <tr>
+            <td class="assignment">
+              <a href="#" class="assignment-link">A9</a>
+            </td>
+            <td class="student">Grace B.</td>
+            <td class="status">
+              <div class="status-indicator status-done">
+                <i class="bx bxs-check-circle"></i>
+                <span class="status-label">Done</span>
+              </div>
+            </td>
+            <td class="submission">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="feedback">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="grading">76%</td>
+          </tr>
+          <tr>
+            <td class="assignment">
+              <a href="#" class="assignment-link">A9</a>
+            </td>
+            <td class="student">Hannah P.</td>
+            <td class="status">
+              <div class="status-indicator status-done">
+                <i class="bx bxs-check-circle"></i>
+                <span class="status-label">Done</span>
+              </div>
+            </td>
+            <td class="submission">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="feedback">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="grading">78%</td>
+          </tr>
+          <tr>
+            <td class="assignment">
+              <a href="#" class="assignment-link">A9</a>
+            </td>
+            <td class="student">Max M.</td>
+            <td class="status">
+              <div class="status-indicator status-done">
+                <i class="bx bxs-check-circle"></i>
+                <span class="status-label">Done</span>
+              </div>
+            </td>
+            <td class="submission">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="feedback">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="grading">0</td>
+          </tr>
+          <tr>
+            <td class="assignment">
+              <a href="#" class="assignment-link">A8</a>
+            </td>
+            <td class="student">Noah S.</td>
+            <td class="status">
+              <div class="status-indicator status-done">
+                <i class="bx bxs-check-circle"></i>
+                <span class="status-label">Done</span>
+              </div>
+            </td>
+            <td class="submission">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="feedback">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="grading">92%</td>
+          </tr>
+          <tr>
+            <td class="assignment">
+              <a href="#" class="assignment-link">A8</a>
+            </td>
+            <td class="student">Grace B.</td>
+            <td class="status">
+              <div class="status-indicator status-missed">
+                <i class="bx bxs-x-circle"></i>
+                <span class="status-label">Missed</span>
+              </div>
+            </td>
+            <td class="submission">
+              <div class="disabled"><i class="bx bx-x"></i></div>
+            </td>
+            <td class="feedback">
+              <div class="disabled"><i class="bx bx-x"></i></div>
+            </td>
+            <td class="grading">0</td>
+          </tr>
+          <tr>
+            <td class="assignment">
+              <a href="#" class="assignment-link">A8</a>
+            </td>
+            <td class="student">Hannah P.</td>
+            <td class="status">
+              <div class="status-indicator status-done">
+                <i class="bx bxs-check-circle"></i>
+                <span class="status-label">Done</span>
+              </div>
+            </td>
+            <td class="submission">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="feedback">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="grading">56%</td>
+          </tr>
+          <tr>
+            <td class="assignment">
+              <a href="#" class="assignment-link">A8</a>
+            </td>
+            <td class="student">Max M.</td>
+            <td class="status">
+              <div class="status-indicator status-done">
+                <i class="bx bxs-check-circle"></i>
+                <span class="status-label">Done</span>
+              </div>
+            </td>
+            <td class="submission">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="feedback">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="grading">66%</td>
+          </tr>
+          <tr>
+            <td class="assignment">
+              <a href="#" class="assignment-link">A7</a>
+            </td>
+            <td class="student">Noah S.</td>
+            <td class="status">
+              <div class="status-indicator status-done">
+                <i class="bx bxs-check-circle"></i>
+                <span class="status-label">Done</span>
+              </div>
+            </td>
+            <td class="submission">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="feedback">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="grading">81%</td>
+          </tr>
+          <tr>
+            <td class="assignment">
+              <a href="#" class="assignment-link">A7</a>
+            </td>
+            <td class="student">Grace B.</td>
+            <td class="status">
+              <div class="status-indicator status-done">
+                <i class="bx bxs-check-circle"></i>
+                <span class="status-label">Done</span>
+              </div>
+            </td>
+            <td class="submission">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="feedback">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="grading">92%</td>
+          </tr>
+          <tr>
+            <td class="assignment">
+              <a href="#" class="assignment-link">A7</a>
+            </td>
+            <td class="student">Hannah P.</td>
+            <td class="status">
+              <div class="status-indicator status-done">
+                <i class="bx bxs-check-circle"></i>
+                <span class="status-label">Done</span>
+              </div>
+            </td>
+            <td class="submission">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="feedback">
+              <a href="#" class="submission-link">
+                <i class="bx bxs-file-pdf"></i>
+              </a>
+            </td>
+            <td class="grading">77%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!--Link to js-->
+    <script src="../../js/hci-asg.js"></script>
+  </body>
 </html>
-
