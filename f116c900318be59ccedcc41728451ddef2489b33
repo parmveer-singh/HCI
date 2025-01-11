@@ -1,0 +1,395 @@
+[33mcommit 825976d29434d7513085608e21feb5d348634ea9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 476d2bf a9c34e6
+Author: perveer1 <131478495+perveer1@users.noreply.github.com>
+Date:   Sat Jan 11 15:42:14 2025 +0100
+
+    Merge pull request #3 from parmveer-singh/responsive
+    
+    Add files via upload
+
+[33mcommit a9c34e67d42eac5bc47f7f3c12d38fcf19219fb5[m
+Author: perveer1 <131478495+perveer1@users.noreply.github.com>
+Date:   Sat Jan 11 15:39:39 2025 +0100
+
+    Add files via upload
+
+[33mcommit 476d2bf4cfeb3fec79e2e749e79206346956de9e[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Fri Jan 10 17:30:24 2025 +0100
+
+    anpassung namen course alles
+
+[33mcommit 8df32c3ed7718c53e3eb2641613e9061ac5fed17[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Fri Jan 10 17:26:05 2025 +0100
+
+    anpassung namen course alles
+
+[33mcommit 283b0754cd1a775ea1e55d1108cff4a3df9a7d54[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Fri Jan 10 17:22:08 2025 +0100
+
+    anpassung namen course alles
+
+[33mcommit fd3a0802da7d8f8f956e996f6cc8dc1e0c5acce1[m
+Merge: 093125e f116c90
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Fri Jan 10 16:45:12 2025 +0100
+
+     asölkfj
+
+[33mcommit 093125ef9609e51fa4de3cb318b1be42e1e965f5[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Fri Jan 10 16:30:38 2025 +0100
+
+    padding homepage
+
+[33mcommit f116c900318be59ccedcc41728451ddef2489b33[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Fri Jan 10 15:55:02 2025 +0100
+
+    hci-asg
+
+[33mcommit 32e2bfea47b308fa3e1c8dc96556aae6ec28119c[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Fri Jan 10 15:52:07 2025 +0100
+
+    submit button in home page
+
+[33mcommit ad4ed557dcea72823ff0c3df32a6621646a13bdb[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Thu Jan 9 21:37:21 2025 +0100
+
+    avatar
+
+[33mcommit 91ef3e26b405872fea789b75dc6b7ee08d0fdff8[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Thu Jan 9 21:30:23 2025 +0100
+
+    Organisatorisches und Veränderung zu Groups & Assignments Table
+
+[33mcommit b911985ef7256345f0bfed298d44647c18dd5431[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Tue Jan 7 16:23:43 2025 +0100
+
+    small stuff
+
+[33mcommit f31ad087f357f6d4cddebe0f01be390f9a9bf40c[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Sun Jan 5 17:22:08 2025 +0100
+
+    tutor version
+
+[33mcommit a613b7140428b171df30216e948a70ce4a37d85c[m
+Merge: 50f7aac 3953637
+Author: star <140255093+invstar@users.noreply.github.com>
+Date:   Sun Jan 5 17:02:03 2025 +0100
+
+    Merge pull request #1 from Qewrfa/main
+    
+    Alan
+
+[33mcommit 39536378a66f27462424e55162bc48268b9e5ace[m
+Author: Alan <jlassiala666@gmail.com>
+Date:   Sun Jan 5 16:43:41 2025 +0100
+
+    Alan
+
+[33mcommit 50f7aac1fcaaa0a1c8b5701fc740963b92800460[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Sat Jan 4 22:41:55 2025 +0100
+
+    tutor view angepasst
+
+[33mcommit 18604325020b7aa529a7d1b7e7331befb2f928f1[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Sat Jan 4 22:24:15 2025 +0100
+
+    tutor home page perfected except for avaters
+
+[33mcommit 87600de66ad369a793cf50f8c3da56f35efe5bd0[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Sat Jan 4 22:15:47 2025 +0100
+
+    same sidebars in tutor view
+
+[33mcommit f6292cb3ea33e764e00ced20a794ee01e2654cae[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Sat Jan 4 21:22:04 2025 +0100
+
+    added potential redirect button
+
+[33mcommit 0e64b84a458cae176151270e95266489079de448[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Sat Jan 4 20:57:53 2025 +0100
+
+    dynamic countdown + full width flexbox+
+
+[33mcommit 2c8be002b47dd7d26e843cd2cb48bc9e416c63d3[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Sat Jan 4 19:21:42 2025 +0100
+
+    change
+
+[33mcommit c809393ee95a7d11062d6f92dfc60efa3b447ea8[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Fri Jan 3 22:54:17 2025 +0100
+
+    schnittstellen tutor-version
+
+[33mcommit dd5147dce53804b598492d6d7941d59786a33efe[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Fri Jan 3 20:07:39 2025 +0100
+
+     entering tutor as usernaem will redirect to tutor view
+
+[33mcommit 09667609bb3e7cb33273dd5b40b838ec63686baa[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Fri Jan 3 19:37:21 2025 +0100
+
+    linked login to homepage
+
+[33mcommit 01d454f63436cbac4126aeae270b628ee0e674cc[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Fri Jan 3 16:59:25 2025 +0100
+
+    linked
+
+[33mcommit d418aa7ef767ac2d768a37f256d29953bd828f9f[m
+Merge: e49a815 9d1d4c4
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Thu Jan 2 22:12:12 2025 +0100
+
+    Merge branch 'main' of https://github.com/parmveer-singh/HCI
+
+[33mcommit e49a815ca1c1705fdba88cf5013646b81e5f64cf[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Thu Jan 2 22:10:55 2025 +0100
+
+    improvements
+
+[33mcommit 9d1d4c4188af59a29950310e7ca1aa98820ebcac[m
+Author: rah1kumar <rahul.kumar@stud.uni-hannover.de>
+Date:   Thu Jan 2 21:01:28 2025 +0100
+
+    new
+
+[33mcommit ca3d0b393ac7c646515863251a32d34ab4d8fd8a[m
+Author: rah1kumar <rahul.kumar@stud.uni-hannover.de>
+Date:   Thu Jan 2 20:20:01 2025 +0100
+
+    new
+
+[33mcommit fd69c4dcf58f53bf01961ddd5d2bed5311c5fe34[m
+Author: rah1kumar <rahul.kumar@stud.uni-hannover.de>
+Date:   Thu Jan 2 20:13:03 2025 +0100
+
+    commit
+
+[33mcommit f29ed43a4265ea8cf825eb62da595d31ea368f4e[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Thu Jan 2 20:02:35 2025 +0100
+
+    profile-page
+
+[33mcommit 2570df7d746eaa3e3349db265f4346810e7e9ce2[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Thu Jan 2 17:41:46 2025 +0100
+
+    labels
+
+[33mcommit 89b79867e6ebc9f2c728e91e20830c88705a8cb9[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Thu Jan 2 17:39:37 2025 +0100
+
+    avatars
+
+[33mcommit abfbc1a1693fbddde6a24b063627b41898d81c38[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Thu Jan 2 17:12:26 2025 +0100
+
+    s
+
+[33mcommit 250fbc6689752f6b3a31786b3065d569726114e5[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Thu Jan 2 17:11:47 2025 +0100
+
+    linked pages
+
+[33mcommit 32e27933b65d05cc012c32cb6e85783a6a52c9c5[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Thu Jan 2 17:09:31 2025 +0100
+
+    design changes on groups page
+
+[33mcommit 403281ae05abd074526b390278d7b961d9b04a1b[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Thu Jan 2 15:19:49 2025 +0100
+
+    1
+
+[33mcommit ae9337851beec23bf863088501be404b839b76ec[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Thu Jan 2 15:10:53 2025 +0100
+
+    link
+
+[33mcommit d5d3668e2f470ac681b7b134c4410139f17b0dd1[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Thu Jan 2 15:06:14 2025 +0100
+
+    welcome-section removed
+
+[33mcommit 139f6b680cd0b6b92cabbee011def5d50b09cf20[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Thu Jan 2 10:58:49 2025 +0100
+
+    sidebar improved
+
+[33mcommit c99033d6be6839f92e79ec17edd0f5ce967d423f[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Thu Jan 2 09:47:37 2025 +0100
+
+    unneccessary folders deleted
+
+[33mcommit d0141df0b06068ed0ce1b3a71eda485256c9daaf[m
+Merge: bb9c7ef cb88326
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Thu Jan 2 09:44:21 2025 +0100
+
+    Merge branch 'dev'
+
+[33mcommit bb9c7ef4e5e18c569f2c35b1058bbe4b4a6e9a36[m
+Merge: f855f35 c7e96e4
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Thu Jan 2 09:33:12 2025 +0100
+
+    Merge branch 'main' of https://github.com/parmveer-singh/HCI
+    integration of groups folder
+
+[33mcommit cb8832613f4b2f9863078b9d72a755e17be1c110[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Thu Jan 2 09:28:57 2025 +0100
+
+    deleted unneccssarry file
+
+[33mcommit 5869fe4a86ca93cd77571ed3f5db558e236bc52f[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Thu Jan 2 09:21:45 2025 +0100
+
+    final version
+
+[33mcommit c7e96e490d99191f297c191ccfb774b338102b42[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Thu Jan 2 03:48:04 2025 +0100
+
+    details
+
+[33mcommit 93817210fced2c9cb12326e62b9bbf1c36b97696[m
+Merge: 2a9b229 87e8f1d
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Wed Jan 1 20:49:47 2025 +0100
+
+    Merge branch 'main' of https://github.com/parmveer-singh/HCI
+
+[33mcommit 2a9b2294b945ac63ff7e9df062a6c6d0fde8227d[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Wed Jan 1 20:49:22 2025 +0100
+
+    changes
+
+[33mcommit ac1d5dbc608c98a55334f76ef5991b98d10db0c2[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Wed Jan 1 19:55:36 2025 +0100
+
+    made flexbox invisible
+
+[33mcommit fd8cee8876158981c10832a7651cf6657184f84f[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Wed Jan 1 19:45:38 2025 +0100
+
+    added sidebar not dark mode yet
+
+[33mcommit 1e2a7922ca3782808545c63540c1bd8cfb0578cd[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Wed Jan 1 19:03:22 2025 +0100
+
+    perfektion menüband fehlt noch
+
+[33mcommit a04fce68c17e5249d71ba16d72c35d8d28690ad7[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Wed Jan 1 19:01:34 2025 +0100
+
+    perfektion
+
+[33mcommit 87e8f1da98d969b6e5c99755c562c4fa5253b3b4[m
+Author: rah1kumar <rahul.kumar@stud.uni-hannover.de>
+Date:   Wed Jan 1 18:36:05 2025 +0100
+
+    commit
+
+[33mcommit 53a61eb56dd62dc30b4773ccdaa4c6aa478c49b2[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Wed Jan 1 18:19:55 2025 +0100
+
+    dark mode
+
+[33mcommit 2ba9f65db37105789f85d7c960847227f6d020d3[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Wed Jan 1 18:02:35 2025 +0100
+
+    ala-homepage
+
+[33mcommit 4db3bfd32daaf134d21565eead53cc7e1d9aacdf[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Wed Jan 1 17:35:01 2025 +0100
+
+    improved styling
+
+[33mcommit 26082930e707d0a47f24ed75157ae33e9b23c6f6[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Wed Jan 1 16:53:34 2025 +0100
+
+    modularization
+
+[33mcommit 9cf498c61e93241eb5c1d784301e18f0107ce238[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Wed Jan 1 16:40:43 2025 +0100
+
+    modularization
+
+[33mcommit 8af066757b3694978966649e5f7747b02c2d897e[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Wed Jan 1 00:56:37 2025 +0100
+
+    pink buttons
+
+[33mcommit f855f35a7057139f98a7cb9b678423f79ec8c809[m
+Author: parmveersingh139 <parmveer.singh@stud.uni-hannover.de>
+Date:   Tue Dec 31 22:03:12 2024 +0100
+
+    Reinitialize repository
+
+[33mcommit 0cf43eb8e14b01aa6c71a4a67de2eb4e9dd1c676[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Tue Dec 31 04:27:30 2024 +0100
+
+    details
+
+[33mcommit 37bae2521963f2ba0b67756db1b077c0ad881701[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Mon Dec 30 19:06:47 2024 +0100
+
+    changes
+
+[33mcommit f9e688037ec50ce9ba3cc6d6526310195355d087[m
+Author: Nijme <jafarnijme@gmail.com>
+Date:   Thu Dec 26 22:44:05 2024 +0100
+
+    courses template
+
+[33mcommit 19e6b7a945c7aa2b6e2983fccee2c08dd61e0e1c[m
+Author: parmveer-singh <parmveer.singh@stud.uni-hannover.de>
+Date:   Tue Dec 17 12:29:49 2024 +0100
+
+    Initial commit
