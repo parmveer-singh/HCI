@@ -60,38 +60,10 @@
       </ul>
     </nav>
 
-    <!--Profile Section-->
-    <div class="profile-section">
-      <div class="pfp">
-        <a href="profile.html">
-          <i class="bx bxs-user-circle"></i>
-        </a>
-      </div>
-      <div class="name">Max Mustermann</div>
-      <div class="position">Student</div>
-      <hr class="line" />
-      <div class="rem-header">Reminders:</div>
-      <div class="reminders">
-        <div class="rem-upload">
-          <img src="../avatar/alert.png" alt="avatar" width="55" height="60" />
-          <p>You have an Assignment that needs to be sumbitted</p>
-        </div>
-        <div class="rem-missed">
-          <img src="../avatar/missed.png" />
-          <p>Oops Assigment missed</p>
-        </div>
-        <div class="rem-feedback">
-          <img src="../avatar/complete.png" />
-          <p>Alert: You have a Feedback</p>
-        </div>
-      </div>
-      <div class="submit-deadline">
-        <b>Time left to submit:</b><br />
-        <span id="countdown">6 days, 2 hrs, 31 min, 12 sec</span>
-      </div>
-    </div>
+  
 
     <!--Main Section-->
+    <div id="main" >
     <div class="main-content">
       <!--Courses Section-->
       <div class="sec-name">Courses</div>
@@ -219,8 +191,66 @@
         </div>
       </div>
     </div>
+  <!--Profile Section-->
+  <div class="profile-section">
+    <div class="pfp">
+      <a href="../profile/profile.html">
+        <i class="bx bxs-user-circle"></i>
+      </a>
+    </div>
+    <div class="name">Max Mustermann</div>
+    <div class="position">Student</div>
+    <hr class="line" />
+    <div class="rem-header">Reminders:</div>
+    <!--Reminders Avatar-->
+    <div class="reminders">
+      <div class="rem-upload">
+        <img src="../avatar/completed-course.png" alt="avatar" width="55" height="60">
+        <p> You have an Assignment that needs to be sumbitted</p></div>
+      <div class="rem-missed"><img src="../avatar/missed.png" ><p>Oops Assigment missed</p></div>
+      <div class="rem-feedback"><img src="../avatar/alerts.png" ><p>Alert: You have a Feedback</p></div>
+    </div>
+    <div class="submit-deadline">
+      <img src="../avatar/timer.png" >
+       <div class="timebar">
+      <b>Time left to submit:</b>
+      <span id="countdown">6 days, 2 hrs, 31 min, 12 sec</span>
+    </div>
+    </div>
+  </div>
 
-    <!--Link to js-->
-    <script src="../js/home.js"></script>
+    </div>
+
+    <script>
+      // Function to start the countdown and reset it once finished
+      function startCountdown() {
+        const countdownElement = document.getElementById("countdown");
+        let timeLeft = 6 * 24 * 60 * 60 + 2 * 60 * 60 + 31 * 60 + 12; // Initial time in seconds: 6 days, 2 hours, 31 minutes, 12 seconds
+
+        // Function to update the countdown
+        function updateCountdown() {
+          const days = Math.floor(timeLeft / (24 * 60 * 60));
+          const hours = Math.floor((timeLeft % (24 * 60 * 60)) / (60 * 60));
+          const minutes = Math.floor((timeLeft % (60 * 60)) / 60);
+          const seconds = timeLeft % 60;
+
+          countdownElement.innerHTML = `${days} days, ${hours} hrs, ${minutes} min, ${seconds} sec`;
+
+          if (timeLeft <= 0) {
+            // Reset the countdown once it reaches zero
+            timeLeft = 6 * 24 * 60 * 60 + 2 * 60 * 60 + 31 * 60 + 12; // Reset to initial value
+          } else {
+            timeLeft--;
+          }
+        }
+
+        // Update the countdown every second
+        setInterval(updateCountdown, 1000);
+      }
+
+      // Start the countdown when the page loads
+      window.onload = startCountdown;
+    </script>
+
   </body>
 </html>
