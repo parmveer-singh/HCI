@@ -28,17 +28,26 @@
   />
 </head>
 <body>
-  <!--login form-->
+  <!-- Main Section (Description) -->
+  <div id="main-section">
+        <p class="h0">Mission Submit</p>
+        <hr class="line" />
+        <p class="h1">Submit your work,</p>
+        <p class="h2">fast and easy.</p>
+        <div class="start">
+            <button onclick="scrollToLogin()">Get Started</button>
+        </div>
+  </div>
+
+    <!--login form-->
   <div id="login" class="login-container">
     <div class="login-section">
-      <div class="login-header">
-        <h2 class="mission-submit">Log in to your account</h2>
-      </div>
+      <div class="login-header">Log in</div>
       <form id="loginForm" method="GET">
-        <input id="luhId" type="text" placeholder="LUH-ID" required />
-        <div class="line"></div>
-        <input type="password" placeholder="Password" required />
-        <div class="line"></div>
+        <p class="type">LUH-ID</p>
+        <input id="luhId" type="text" required />
+        <p class="type">Password</p>
+        <input type="password" required />
         <button type="submit">Login</button>
       </form>
     </div>

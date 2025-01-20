@@ -5,9 +5,9 @@ document.getElementById("loginForm").onsubmit = function (event) {
 
   // Redirect based on LUH-ID
   if (luhId.toLowerCase() === "tutor") {
-    window.location = "../Tutor/home.html";
+    window.location = "../tutor/home.html";
   } else {
-    window.location = "../Student/home.html";
+    window.location = "../student/home.html";
   }
 };
 

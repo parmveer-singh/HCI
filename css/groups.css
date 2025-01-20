@@ -13,6 +13,9 @@
     flex-direction: column;
 }
 
+.entry-button-section {
+    font-size: 1.5rem;
+}
 .entry-button {
     background-color: #8D7EFF;
     color: white;
